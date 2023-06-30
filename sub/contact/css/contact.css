@@ -1,0 +1,242 @@
+div#contact_wrap1{
+  width:100%;
+  height: 1000px;
+  position:relative;
+  left:0px;
+  top:0px;
+}
+
+div#contact_text_wrap1{
+  widtH:90%;
+  height: 1000px;
+  position: absolute;
+  left:85px;
+  top:150px;
+  /* background: white; */
+  text-align: right;
+}
+p#contact_title{
+  font:normal 160px "Pacifico";
+  color:#22226B;
+  position:relative;
+  left:0px;
+  top:0px;
+  margin-bottom: 150px;
+}
+p#contact_title::before{
+  content: '';
+  width: 28px;
+  height: 46px;
+  position:absolute;
+  right:340px;
+  top:70px;
+  background: url(/sub/contact/images/title_deco.png)no-repeat;
+}
+p#contact_num_text{
+  font:normal 90px "Roboto";
+  font-weight: 900;
+  color: #0A013D;
+  margin-bottom: 20px;
+  position: relative;
+  left:0px;
+  top:0px;
+}
+p#contact_num_text::before{
+  content: '';
+  width:60px;
+  height: 56px;
+  position: absolute;
+  right:580px;
+  top:-15px;
+  background: url(/sub/contact/images/num_deco.png) no-repeat;
+}
+p#contact_address_title{
+  font:normal 50px "Roboto";
+  color: #0A013D;
+  margin-bottom: 20px;
+}
+p#contact_address_text{
+  font:normal 40px "Roboto";
+  color:#888888;
+}
+
+div#contact_wrap2{
+  width:100%;
+  height:650px;
+  position: relative;
+  left: 0px;
+  top:0px;
+  margin-bottom: 150px;
+}
+div#daumRoughmapContainer1687854314884{
+  width:100%;
+  height: 650px;
+  position: absolute;
+  left:50%;
+  margin-left:-750px;
+  top:0px;
+}
+
+/*form start*/
+div#contact_join_form_wrap{
+  width:100%;
+  height: 1130px;
+  padding: 150px 100px;
+  box-sizing: border-box;
+  /* background: #eee; */
+  /* background-color: red; */
+}
+p#contact_join_form_title{
+  width:100%;
+  height: 150px;
+  font: normal 100px/60px "Roboto";
+  font-weight: 900;
+  color:#0A013D;
+  text-transform:uppercase;
+  text-align: center;
+  margin-bottom: 80px;
+}
+span#contact_join_form_text{
+  font:normal 34px "Roboto";
+  text-align: center;
+}
+
+div#contact_input_wrap{
+  width:1400px;
+  height: 495px;
+  margin: 0px auto;
+  position:relative;
+  left:0px;
+  top:0px;
+}
+
+div.contact_inner_input_wrap{
+  width:650px;
+  height: 55px;
+  border: none;
+  border-bottom: 1px solid #0A013D;
+  box-sizing: border-box;
+  font: normal 25px/55px "Roboto";
+  font-weight: 500;
+  color: #0a013d;
+  float: left;
+}
+
+div#contact_form_name>input,
+div#contact_form_num>input,
+div#contact_form_email>input,
+div#contact_form_amount>input{
+  width: 500px;
+  height:55px;
+  background: none;
+  border:none;
+  margin-left:50px;
+  caret-color: #0a013d;
+  font-size: 25px;
+  /* background-color: yellow; */
+}
+div.contact_inner_input_wrap>input:focus {
+  outline:none;
+}
+
+div#contact_form_name,
+div#contact_form_email{
+  margin-right:100px;
+}
+
+div#contact_form_num,
+div#contact_form_amount{
+  margin-right: 0px;
+  margin-bottom: 20px;
+}
+
+div#contact_form_email,
+div#contact_form_amount{
+  margin-bottom: 100px;
+}
+
+div#contact_form_QnA_wrap{
+  width: 100%;
+  height: 300px;
+  border-bottom: 1px solid #0A013D;
+  position: absolute;
+  top: 130px;
+  left: 0;
+}
+
+p#contact_form_QnA_title{
+  font: normal 25px/300px "Roboto";
+  font-weight: 500;
+  height: 25px;
+  color: #0a013d;
+}
+input#contact_form_QnA{
+  width: 1250px;
+  height:300px;
+  margin-left:0px;
+  background: none;
+  border:none;
+  caret-color: #0a013d;
+  font-size: 25px;
+  border: none;
+  box-sizing: border-box;
+  position:absolute;
+  left:150px;
+  top:0px;
+}
+input#contact_form_QnA:focus{
+  outline: none;
+}
+
+
+
+/* 체크 하는 부분 */
+div#contact_check_wrap{
+  width: 1400px;
+  height: 80px;
+  margin-top: 50px;
+  margin: 0 auto;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+button#contact_check_btn{
+  border: 1px solid black;
+  box-sizing: border-box;
+  width: 35px;
+  height: 35px;
+  background-color: transparent;
+  cursor: pointer;
+  /* float: left; */
+}
+button#contact_check_btn>i{
+  font-size: 20px;
+}
+p#contact_check_text{
+  position: absolute;
+  top: 0px;
+  left: 50px;
+  width: auto;
+  height: 35px;
+  font: normal 30px 'Roboto';
+  color: #0A013D;
+}
+button#contact_inquiry_btn{
+  position: absolute;
+  bottom: 10px;
+  right: 0;
+  width: 230px;
+  height: 80px;
+  background-color: #0A013D;
+  border: none;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+button#contact_inquiry_btn>span{
+  font: bold 30px 'Roboto';
+  color: white;
+}
+
+button#contact_inquiry_btn:hover{
+  background-color: #22226B;
+}

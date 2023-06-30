@@ -1,0 +1,175 @@
+div#logo_wrap{
+  width: 100%;
+  height: 560px;
+  /* background-color: red; */
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+div#logo_wrap>svg{
+  position: absolute;
+  top: 180px;
+  right: 130px;
+  /* background-color: blue; */
+}
+
+span#logo_airplane{
+  position: absolute;
+  top: 180px;
+  right: 270px;
+  display: block;
+  width: 45px;
+  height: 50px;
+  background: url(/sub/story/images/airplane.png) no-repeat center;
+}
+
+
+/* div#logo_wrap>svg::before{
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-image: url(/sub/story/images/airplane.png);
+  width: 45px;
+  height: 45px;
+} */
+
+
+
+
+
+div#story_wrap{
+  width: 100%;
+  min-height: 3800px;
+  /* overflow: hidden; */
+  background-color: white;
+}
+
+.story_box_size{
+  width: 1640px;
+  height: 630px;
+  margin: 0 auto;
+  /* background-color: blue; */
+  margin-top: 100px;
+}
+
+div#story_box1{
+  margin-top: 0;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+div#story_box2{
+  position: relative;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+div#story_box3{
+  position: relative;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+div#story_box4{
+  position: relative;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+div#story_box5{
+  position: relative;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+
+ul.story_list{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  /* background-color: red; */
+}
+
+ul.story_list>li{
+  width: 33%;
+  height: 100%;
+  /* border: 1px solid black; */
+  box-sizing: border-box;
+}
+
+.story_img_box{
+  width: 520px;
+  height: 520px;
+  /* background-color: blue; */
+  margin: 0 auto;
+  position: relative;
+  top: 0;
+  left: 0;
+  margin-top: 50px;
+  overflow: hidden;
+
+}
+
+.story_img_box::before{
+  content: "";
+  display: block;
+  width: 80px;
+  height: 20px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background:url(/sub/story/images/story_icon.png) no-repeat;
+  z-index: 10;
+}
+
+.story_img_box>img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: scale(1,1);
+  transition: 0.5s ease-in;
+}
+/*
+.story_img_box에 overflow: hidden을 한후
+img에 마우스 오버했을 때 스케일을 키움 
+*/
+.story_img_box>img:hover{
+  transform: scale(1.2,1.2);
+ 
+}
+
+.center_img{
+  margin-top: 0px;
+}
+
+.story_list_info{
+  width: 520px;
+  height: 25px;
+  margin: 0 auto;
+  margin-top: 15px;
+  /* background-color: blue; */
+  position: relative;
+  top: 0;
+  left: 0;
+  font: 22px/25px 'Roboto';
+  font-weight: 400;
+  color: #222222;
+}
+
+.story_list_info_date{
+  position: absolute;
+  left: 10px;
+  top: 0;
+}
+
+.story_list_info_title{
+  position: absolute;
+  right: 10px;
+  top: 0;
+}

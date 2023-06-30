@@ -1,0 +1,94 @@
+
+/*copy_wrap start*/
+div#copy_wrap{
+  width:100%;
+  height:auto;
+  position:relative;
+  left:0;
+  top:0;
+  overflow:hidden;
+}
+
+div#copy_wrap p.copy_hi{
+  font:bold 140px "Roboto";
+  color:#22226b;
+  position:absolute;
+  left:-100px;
+  top:36%;
+  opacity:0;
+  /* 원래위치 left:100px top:36% */
+}
+
+div#copy_wrap div.copy_title{
+  position:absolute;
+  right:-100px;
+  top:36%;
+  opacity:0;
+  /* 원래위치 right:100px top:36% */
+}
+div#copy_wrap div.copy_title div.copy_we_are{
+  float:left; 
+}
+div#copy_wrap svg#svg_size{
+  width:350px;
+  height: 100%;
+  padding-top:20px;
+  
+}
+div#copy_wrap div.copy_title path{
+  fill:none;
+  stroke:#22226b;
+  stroke-width:4px;
+  stroke-dasharray:1200;
+  stroke-dashoffset:1200;
+}
+div#copy_wrap div.activate path{
+  animation: stroke 1.5s 1s linear;
+  animation-fill-mode: forwards
+}
+
+div#copy_wrap div.copy_title>span.copy_naming{
+  font:bold 120px "Roboto";
+  color:#0A013D;
+}
+
+div#copy_wrap p.copy_arrow{
+  width:100px;
+  height:100px;
+  position:absolute;
+  left:50%;
+  top:52%;
+  z-index:9999;
+}
+div#copy_wrap p.copy_arrow path{
+  stroke-dasharray:600;
+  stroke-dashoffset:600;
+  
+}
+div#copy_wrap p.arrow_activate path{
+  animation:copy_arrow_ani 2s 1.5s forwards;
+}
+
+
+
+@keyframes stroke {
+  0% {
+      stroke-dashoffset: 1200;
+  }
+
+  100% {
+      stroke-dashoffset: 0;
+    
+  }
+}
+
+@keyframes copy_arrow_ani{
+  0%{
+    stroke-dashoffset:600;
+  }
+  100%{
+    stroke-dashoffset:0;
+  }
+}
+
+/*copy_wrap end*/

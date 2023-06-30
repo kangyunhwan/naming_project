@@ -1,0 +1,136 @@
+/*main_portfolio start*/
+div#portfolio_wrap{
+  width:100%;
+  height:800px;
+  overflow:hidden;
+  background:url(/image/portfolio_bg.png) no-repeat center center;
+  background-size:cover;
+  position:relative;
+  left:0;
+  top:0;
+}
+div#portfolio_bg_text_wrap{
+  width:100%;
+  height:100%;
+  position:absolute;
+  left:0;
+  top:0;
+}
+
+div.portfolio_bg_text1{
+  width:100%;
+  position:absolute;
+  left:0px;
+  top:30%;
+}
+div.portfolio_bg_text2{
+  width:100%;
+  position:absolute;
+  left:0px;
+  top:45%;
+}
+div.portfolio_bg_text1 p{
+  font:bold 160px "Roboto";
+  color:#C2EBDA;
+  float:left;
+  white-space:nowrap;
+}
+div.portfolio_bg_text1 p:first-child{
+  padding-right:40px;
+}
+div.portfolio_bg_text2 p:first-child{
+  padding-right:40px;
+}
+
+div.portfolio_bg_text2 p{
+  font:bold 160px "Roboto";
+  color:#22226b;
+  float:left;
+  white-space:nowrap;
+}
+div.portfolio_bg_text1 span.text1_stroke{
+  color:rgba(0,0,0,0);
+  -webkit-text-stroke: 2px #0a013d;
+}
+div.portfolio_bg_text2 span.text1_stroke{
+  color:rgba(0,0,0,0);
+  -webkit-text-stroke: 2px #C2EBDA;
+}
+
+
+
+
+
+ul#portfolio_list{
+  width:90%;
+  height:600%;
+  position:relative;
+  left:0;
+  display:flex;
+  flex-wrap:wrap;
+  flex-direction:column;
+  justify-content:space-around;
+  margin:0 auto;
+}
+ul#portfolio_list li{
+  width:80%;
+  position:relative;
+  left:0;
+  top:0;
+}
+ul#portfolio_list li:nth-child(2n){
+  margin-left:auto;
+}
+ul#portfolio_list li:nth-child(2n) div{
+  float:right;
+}
+ul#portfolio_list li a{
+  text-decoration:none;
+}
+ul#portfolio_list li a div{
+  float:left;
+}
+ul#portfolio_list li a div.portfolio_text_wrap{
+  margin:570px 30px 0px 30px;
+}
+
+ul#portfolio_list li a p.portfolio_img{
+  display:block;
+  width:100%;
+}
+ul#portfolio_list li a p.portfolio_num{
+  font:bold 60px "Roboto";
+  color:rgba(0,0,0,0);
+  -webkit-text-stroke:2px #0a013d;
+  position:relative;
+  left:0;
+  bottom:0;
+}
+ul#portfolio_list li a p.portfolio_title{
+  font:bold 50px "Roboto";
+  color:#0a013d;
+}
+
+
+
+
+
+@keyframes portfolio_left_text_ani{
+  0%{
+    left:0%;
+  }
+  100%{
+    left:-100%;
+  }
+}
+
+@keyframes portfolio_right_text_ani{
+  0%{
+    right:0%;
+  }
+  100%{
+    right:-100%;
+  }
+}
+
+/*main_portfolio end*/

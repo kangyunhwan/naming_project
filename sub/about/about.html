@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About</title>
+
+  <link rel="stylesheet" href="/css/reset.css"> 
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css'/> 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.1/gsap.min.js' ></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.1/ScrollTrigger.min.js' ></script>
+
+  <link rel="stylesheet" href="/css/common.css">
+  <link rel="stylesheet" href="/sub/about/css/about.css">
+
+  <script src="/js/common.js"></script>
+  <script src="/sub/about/js/about.js"></script>
+
+  
+
+
+</head>
+<body>
+  <!-- 헤더부분 시작 -->
+  <div id="header_wrap">
+
+    <div id="header_logo">
+      <a href="/index.html">
+          <svg width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M26.4727 15.3748C30.7907 15.3748 34.2911 11.9616 34.2911 7.75127C34.2911 3.54093 30.7907 0.127777 26.4727 0.127777C22.1547 0.127777 18.6543 3.54093 18.6543 7.75127C18.6543 11.9616 22.1547 15.3748 26.4727 15.3748Z" fill="white"/>
+            <path d="M0 0.127778V15.3748L0.18457 15.5547H15.8213L15.9524 15.247L0.315615 0L0 0.127778ZM2.22222 13.3879V4.92395L10.9025 13.3879H2.22222Z" fill="white"/>
+            <path d="M26.4727 19.3881C22.0596 19.3881 18.4697 22.8885 18.4697 27.1915C18.4697 31.4946 22.0596 34.995 26.4727 34.995C30.8857 34.995 34.4756 31.4946 34.4756 27.1915C34.4756 22.8885 30.8857 19.3881 26.4727 19.3881ZM32.2534 27.1915C32.2534 30.2996 29.6602 32.8282 26.4727 32.8282C23.2852 32.8282 20.6919 30.2996 20.6919 27.1915C20.6919 24.0835 23.2852 21.5549 26.4727 21.5549C29.6602 21.5549 32.2534 24.0835 32.2534 27.1915Z" fill="white"/>
+            <path d="M15.8213 19.0785H0.18457V34.3255H15.8213V19.0785Z" fill="white"/>
+          </svg>
+        <div id="header_logo_title">
+          <svg width="196" height="36" viewBox="0 0 196 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M0.844727 1.79053H9.65056L22.3084 21.7275V1.79053H31.1142V34.6889H22.3084L9.65056 14.3794V34.6889H0.844727V1.79053Z" fill="white"/>
+          <path d="M34.0767 34.6889L45.5071 1.79053H56.5979L68.0283 34.6889H59.2225L56.0054 25.4835L45.0826 28.4134L42.8806 34.6871H34.0767V34.6889ZM47.7921 20.6117L53.7186 19.001L51.0516 11.2821L47.7921 20.6117Z" fill="white"/>
+          <path d="M99.6931 1.79053H108.709V34.6889H99.9035V18.2595L93.0024 34.6889H86.6957L79.7946 18.2595V34.6889H70.9888V1.79053H80.005L89.826 25.1955L99.6931 1.79053Z" fill="white"/>
+          <path d="M122.509 1.79053V34.6889H113.704V1.79053H122.509Z" fill="white"/>
+          <path d="M127.591 1.79053H136.397L149.054 21.7275V1.79053H157.86V34.6889H149.054L136.395 14.3794V34.6889H127.589V1.79053H127.591Z" fill="white"/>
+          <path d="M179.025 28.4134C181.282 28.4134 183.132 27.9041 184.571 26.8854C186.011 25.8668 186.871 24.4235 187.153 22.5518H178.22V15.452H196V20.034C196 22.5662 195.555 24.796 194.667 26.7217C193.778 28.6473 192.565 30.2581 191.026 31.5502C189.486 32.8442 187.689 33.8268 185.629 34.5017C183.569 35.1766 181.38 35.5132 179.067 35.5132C176.498 35.5132 174.106 35.0866 171.891 34.2336C169.675 33.3805 167.75 32.1909 166.112 30.663C164.475 29.1351 163.183 27.3138 162.238 25.1937C161.293 23.0755 160.821 20.7503 160.821 18.2181C160.821 15.686 161.293 13.3608 162.238 11.2425C163.183 9.12429 164.483 7.3012 166.133 5.77326C167.783 4.24533 169.737 3.05573 171.997 2.20268C174.254 1.34962 176.681 0.923096 179.278 0.923096C182.777 0.923096 185.797 1.61778 188.337 3.00714C190.876 4.3965 193.163 6.45355 195.195 9.17828L189.396 13.9259C188.351 12.11 186.976 10.6648 185.269 9.59221C183.562 8.51959 181.522 7.98328 179.152 7.98328C177.882 7.98328 176.668 8.23164 175.513 8.72656C174.355 9.22147 173.346 9.91795 172.486 10.8106C171.624 11.705 170.933 12.7777 170.411 14.0302C169.889 15.2828 169.628 16.6794 169.628 18.2199C169.628 19.7623 169.868 21.157 170.348 22.4096C170.828 23.6622 171.491 24.7348 172.338 25.6293C173.185 26.5237 174.18 27.2112 175.322 27.6935C176.463 28.174 177.698 28.4134 179.025 28.4134Z" fill="white"/>
+          </svg>
+        </div>
+      </a>
+    </div>
+
+    <button id="header_main_menu">
+      <span class="header_short_line"></span>
+      <span class="header_long_line"></span>
+    </button>
+
+    <div id="mainmenu_wrap" class="blur">
+      <div id="mainmenu_list_box">
+        <ul id="mainmenu_list">
+          <li><a href="#">HOME</a></li>
+          <li><a href="#">STORY</a></li>
+          <li><a href="#">ABOUT</a></li>
+          <li><a href="#">PORTFOLIO</a></li>
+          <li><a href="#">We Are <br> Naming </a></li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+  <!-- 헤더부분 끝 -->
+
+
+  <!-- 어바웃영역 시작 -->
+  <div id="about_wrap">
+    <div id="about_title_wrap">
+
+      <h2 id="about_title">ABOUT</h2>
+
+      <div class="about_attention_wrap">
+        <p class="about_attention">ATTENTION</p>
+        <p class="about_attention_title">첫인상 형성에 걸리는 시간 <span>7초</span></p>
+        <p class="about_attention_text">
+          브랜딩은 즉각적으로 강렬한 인상을<br>
+          심어줄 수 있도록 해야 한다
+        </p>
+      </div>
+
+      <p id="about_copy">#호랑이는 죽어서 가죽을 남기고 사람은 죽어서 이름을 남긴다</p>
+
+      <div class="about_identity_wrap">
+        <p class="about_identity">IDENTITY</p>
+        <ul class="about_text_list">
+          <li><span>SIMPLE ;</span> 간단하게 만들어라</li>
+          <li><span>REMEMBER ;</span> 기억하게 만들어라</li>
+          <li><span>FUN ;</span> 재미있게 만들어라</li>
+          <li><span>ATTENTION ;</span> 시선끌게 만들어라</li>
+          
+        </ul>
+      </div>
+
+    </div>
+
+    <div id="about_main_visual">
+      <img src="/sub/about/images/about_main_visual.jpg">
+    </div>
+
+    <div id="about_info_wrap">
+      <div id="about_info_top">
+        <p class="about_logo">
+          <img src="/sub/about/images/about_info_logo.jpg">
+        </p>
+        <p class="about_info_title">올바르게 잘 구축된 네이밍은 소비자들에게 영감과 변화를 줍니다.</p>
+        <p class="about_info_text">
+          이름이 짧은 시간에 오래 기억되게 하는 것은 성공의 첫걸음이라고 할 수 있습니다.<br>
+          이름이 기억되지 못하면 존재 또한 잊혀진 것이나 마찬가지라고 생각합니다.<br>
+          <span>NAMING이라는 이름에는 평생 기억되고자 하는 기업 정신이 담겨 있습니다.</span>
+        </p>
+      </div>
+      
+      <p class="about_line">
+        <span></span>
+      </p>
+
+      <div id="about_info_bottom">
+        <p class="about_info_subtilte">
+          브랜드는 신뢰의 상징이다.
+        </p>
+        <p class="about_info_subtitle2">
+          브랜드는 소비자에게 선택받는 지름길이며,<br>
+          소비자 머릿속의 시스템이기도 하다. 
+        </p>
+        <p class="about_info_subtext">
+          브랜드라는 추상적인 개념을 소비자에게 어필하기 위해서는 브랜드 네임이 필요합니다.
+        </p>
+        <p class="about_info_subtext2">
+          브랜드 네임을 만드는 행위를 <span>NAMING</span>이라고 하는데,<br>
+          <span>NAMING</span>이란 자사의 제품 및 서비스에 아이덴티티를 부여하여<br>
+          그 대상의 의미를 포장해 주는 것을 말합니다.
+        </p>
+      </div>
+
+    </div>
+
+    <div id="about_sub_visual">
+      <img src="/sub/about/images/about_sub_visual.jpg">
+    </div>
+
+    <ul id="about_team_list">
+      <li>
+        <p class="about_team_img">
+          <img src="/sub/about/images/about_team_design.jpg">
+        </p>
+        <p class="about_team_job">
+          DESIGN
+        </p>
+        <p class="about_team_name">
+          이규리, 유나연
+        </p>
+        <p class="about_team_text">
+          트랜디한 감성으로 브랜드 가치를 높이며 유용하지만<br>
+          색다른 디자인을 제공합니다.
+        </p>
+      </li>
+
+      <li>
+        <p class="about_team_img">
+          <img src="/sub/about/images/about_team_publishing.jpg">
+        </p>
+        <p class="about_team_job">
+          PUBLISHING
+        </p>
+        <p class="about_team_name">
+          김샛별
+        </p>
+        <p class="about_team_text">
+          시각적 아름다움에 생명력을 불어넣어 사용자가 경험<br>
+          할 수 있는 이야기를 완성합니다.
+        </p>
+      </li>
+
+      <li>
+        <p class="about_team_img">
+          <img src="/sub/about/images/about_team_frontend.jpg">
+        </p>
+        <p class="about_team_job">
+          FRONT END
+        </p>
+        <p class="about_team_name">
+          박상혁, 강윤환
+        </p>
+        <p class="about_team_text">
+          디지털 매체에 대한 숙련된 이해도를 통해 안정성<br>
+          있는 최적의 인터렉션을 도출합니다.
+        </p>
+      </li>
+    </ul>
+
+  </div>
+  <!-- 어바웃영역 끝 -->
+
+  <!-- 푸터부분 시작 -->
+  <div id="footer_wrap">
+    <div id="footer_project_wrap">
+      <div id="footer_project">
+        <div id="footer_text_box">
+          <p id="footer_title">
+            LET'S DO <br>
+            A PROJECT?
+          </p>
+          <p id="footer_text">
+            네이밍과 프로젝트를 함께 하시겠어요?
+          </p>
+        </div>
+        <div id="footer_form">
+          <input type="text" class="footer_input" maxlength="15" placeholder="회사명" value="회사명">
+          <input type="text" class="footer_input" maxlength="30" placeholder="이메일" value="이메일">
+          <input type="number" class="footer_input" maxlength="15" placeholder="연락처" value="연락처">
+          <input type="text" class="footer_input footer_long" maxlength="30" placeholder="문의내용" value="문의내용">
+
+          <div id="footer_check_wrap">
+            <button id="footer_check_btn">
+              <i class="fa-solid fa-check"></i>
+            </button>
+            <!-- <input type="checkbox" id="footer_check_btn" name="check" value="check"> -->
+            <p id="footer_check_text">
+              개인 정보의 수집/이용 동의
+            </p>
+            <button id="footer_inquiry_btn">
+              <span>문의하기</span>
+              </button>
+          </div>
+         
+        </div>
+
+
+
+      </div>
+    </div>
+    <div id="footer_info">
+      <div id="sub_footer_logo">
+        <img src="/image/sub_footer_logo.png" alt="서브로고이미지">
+      </div>
+      <div id="sub_footer_list_box">
+        <ul id="sub_footer_list">
+          <li><a href="#">ABOUT</a></li>
+          <li><a href="#">PORTFOLIO</a></li>
+          <li><a href="#">STORY</a></li>
+          <li><a href="#">CONTACT</a></li>
+        </ul>
+      </div>
+      <div id="sub_footer_copyright_wrap">
+        <p class="sub_footer_copyright">
+          Tel.  02. 3481. 1005  |  Mail. abcd1234@naming.co.kr
+        </p>
+        <p class="sub_footer_copyright">
+          서울 강남구 테헤란로5길 24 장연빌딩  |  Jangyeon Building, 24, Teheran-ro 5-gil, Gangnam-gu, Seoul
+        </p>
+      </div>
+    </div>
+  </div>   
+  <!-- 푸터부분 끝 -->
+</body>
+</html>

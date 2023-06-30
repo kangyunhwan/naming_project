@@ -1,0 +1,406 @@
+/*  */
+body{
+  background-color: white;
+  width: 100%;
+  height: 1000px;
+}
+div#header_wrap{
+  width:100%;
+  height:35px;
+  position:fixed;
+  left:0;
+  top:75px;
+  z-index:999;
+  /* mix-blend-mode: difference; */
+  /* background-color: red; */
+}
+div#header_logo{
+  width:240px;
+  height: 35px;
+  position:absolute;
+  left:85px;
+  top:0;
+}
+
+
+div#header_logo>a>svg{
+  margin-right: 9px;
+  /* opacity: 0; */
+}
+div#header_logo svg path{
+  fill:#22226b;
+}
+
+div#header_logo_title{
+  width:196px;
+  height: 35px;
+  overflow: hidden;
+  position: absolute;
+  left: 44px;
+  top:0px;
+}
+div#header_logo_title>svg{
+  display: block;
+  position:absolute;
+  left: 0px;
+  top:0px;
+}
+
+
+button#header_main_menu{
+  width: 54px;
+  height: 25px;
+  position:absolute;
+  right:85px;
+  top:0;
+  padding: 0;
+  background: none;
+  border: none;
+  /* opacity: 0; */
+  cursor: pointer;
+  z-index: 9;
+}
+span.header_short_line{
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: block;
+  width: 100%;
+  height: 6px;
+  background-color: #22226B;
+  border-radius: 20px;
+  transition: 1s;
+}
+
+span.header_short_line.selected{
+  transform: rotate(135deg);
+  width: 100%;
+}
+
+span.header_long_line{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 30px;
+  height: 6px;
+  background-color: #22226B;
+  border-radius: 20px;
+  transition: 0.5s;
+}
+
+span.header_long_line.selected{
+  transform: rotate(-135deg);
+  width: 100%;
+  bottom: 19px;
+}
+
+
+
+/* 메인메뉴리스트 시작 */
+/* 메뉴리스트 시작 */
+div#mainmenu_wrap{
+  width: 962px;
+  height: 962px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.7);
+  position: fixed;
+  top: -400px;
+  right: -481px;
+}
+div.blur{
+  backdrop-filter: blur(5px);
+}
+div#mainmenu_list_box{
+  width: 200px;
+  height: 338px;
+  /* background-color: red; */
+  position: absolute;
+  top: 480px;
+  left: 0px;
+}
+
+ul#mainmenu_list{
+  width: 100%;
+  height: 100%;
+  font-size: 20px;
+  line-height: 15px;
+  text-align: right;
+}
+
+ul#mainmenu_list>li{
+  width: 100%;
+  margin-bottom: 10px;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+ul#mainmenu_list>li>a{
+  font: normal 15px/15px 'Roboto';
+  text-decoration: none;
+  
+}
+
+ul#mainmenu_list>li>a::before{
+  content: "";
+  display: block;
+  width: 0px;
+  height: 1px;
+  background-color: red;
+  line-height: 15px;
+  position: absolute;
+  top:10px;
+  left: 0px;
+  opacity: 0;
+  transition: 0.5s ease-in;
+}
+
+ul#mainmenu_list>li>a:hover::before{
+  /* display: block; */
+  opacity: 1;
+  width: 300px;
+}
+ul#mainmenu_list>li:last-child>a:hover::before{
+  display: none;
+}
+
+ul#mainmenu_list>li:last-child>a{
+  color: #06061D;
+}
+
+
+/* 메인메뉴리스트 끝 */
+
+
+
+
+
+
+
+
+
+
+
+
+
+div#test_section{
+  width: 100%;
+  height: 500px;
+  /* background-color: red; */
+}
+
+
+div#footer_wrap{
+  width: 100%;
+  height: 1200px;
+  /* background-color: blue; */
+}
+
+div#footer_project_wrap{
+  width: 100%;
+  height: 800px;
+  background-color: #BFFFE4;
+}
+div#footer_project{
+  width: 1650px;
+  height: 100%;
+  margin: 0 auto;
+  /* border: 1px solid black; */
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+div#footer_text_box{
+  width: 700px;
+  height: 350px;
+  position: absolute;
+  top: 100px;
+  left: 0;
+  color: #0A013D;
+}
+
+p#footer_title{
+  position: absolute;
+  top: 0;
+  left: 0;
+  font: bold 120px/120px 'Roboto';
+}
+
+p#footer_text{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  font: normal 36px/80px 'Roboto';
+  /* letter-spacing: 1px; */
+}
+
+div#footer_form{
+  position: absolute;
+  top: 100px;
+  right: 0;
+  width: 800px;
+  height: 600px;
+}
+div#footer_form>input.footer_input{
+  width: 100%;
+  height: 70px;
+  border: none;
+  border-bottom: 1px solid #0A013D;
+  background-color: transparent;
+  box-sizing: border-box;
+  font-size: 30px;
+}
+
+div#footer_form>input.footer_input.footer_long{
+  height: 210px;
+}
+
+div#footer_check_wrap{
+  width: 100%;
+  height: 80px;
+  margin-top: 50px;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+button#footer_check_btn{
+  position: absolute;
+  top: 20px;
+  border: 1px solid black;
+  box-sizing: border-box;
+  width: 35px;
+  height: 35px;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+button#footer_check_btn>i{
+  font-size: 20px;
+}
+
+
+p#footer_check_text{
+  position: absolute;
+  top: 16px;
+  left: 50px;
+  width: auto;
+  height: 35px;
+  font: normal 30px 'Roboto';
+  color: #0A013D;
+}
+
+button#footer_inquiry_btn{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 230px;
+  height: 80px;
+  background-color: #0A013D;
+  border: none;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+button#footer_inquiry_btn>span{
+  font: bold 30px 'Roboto';
+  color: white;
+}
+
+button#footer_inquiry_btn:hover{
+  background-color: #22226B;
+}
+
+
+
+div#footer_info{
+  width: 100%;
+  height: 400px;
+  background-color: #06061D;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+div#sub_footer_logo{
+  width: 220px;
+  height: 33px;
+  position: absolute;
+  top: 70px;
+  left: 50%;
+  margin-left: -110px;
+}
+
+div#sub_footer_logo>img{
+  width: 100%;
+}
+
+div#sub_footer_list_box{
+  width: 800px;
+  height: 30px;
+  /* background-color: red; */
+  position: absolute;
+  top: 140px;
+  left: 50%;
+  margin-left: -400px;
+}
+
+ul#sub_footer_list{
+  width: 100%;
+  height: 100%;
+}
+
+ul#sub_footer_list>li{
+  width: 25%;
+  height: 100%;
+  float: left;
+  text-align: center;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+
+
+ul#sub_footer_list>li::before{
+  display: block;
+  content: "";
+  width: 2px;
+  height: 30px;
+  background-color: #EEEEEE;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+
+
+ul#sub_footer_list>li:last-child::before{
+  display: none;
+}
+
+
+
+ul#sub_footer_list>li>a{
+  font: 25px/30px 'Roboto';
+  font-weight: 600;
+  text-decoration: none;
+  color: #EEEEEE;
+}
+
+
+div#sub_footer_copyright_wrap{
+  width: 1200px;
+  height: 70px;
+  position: absolute;
+  top: 240px;
+  left: 50%;
+  margin-left: -600px;
+}
+
+p.sub_footer_copyright{
+  font: 26px/35px 'Roboto';
+  font-weight: 500;
+  text-align: center;
+  color: #cccccc;
+}
