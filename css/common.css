@@ -241,30 +241,30 @@ div#footer_form{
   right: 0;
   width: 800px;
   height: 600px;
-  background-color: red;
 }
 div.footer_input_box{
   width: 100%;
   height: 70px;
   border-bottom: 1px solid #0A013D;
-  font: normal 30px/70px 'Roboto';
+  box-sizing: border-box;
+  font: normal 30px 'Roboto';
 }
 div.footer_input_box.long{
   height: 210px;
 }
 
 div.footer_input_box>input.footer_input{
-  width: 80%;
+  width: 70%;
   height: 100%;
-  margin-left: 20%;
-  border: none;
-  background-color: transparent;
+  margin-left: 10%;
+  border: 0;
   box-sizing: border-box;
-  font-size: 30px;
+  background-color: transparent;
 }
 
 div#footer_form>input.footer_input.footer_long{
   height: 210px;
+  margin-left: 0%;
 }
 
 div#footer_check_wrap{
