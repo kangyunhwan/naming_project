@@ -102,11 +102,10 @@ span.header_long_line.selected{
 div#mainmenu_wrap{
   width: 962px;
   height: 962px;
-  border-radius: 50%;
-  background-color: rgba(255, 255, 255, 0.7);
+  background-color: #C37C3B;
   position: fixed;
+  right: -500px;
   top: -400px;
-  right: -481px;
 }
 div.blur{
   backdrop-filter: blur(5px);
@@ -114,10 +113,9 @@ div.blur{
 div#mainmenu_list_box{
   width: 200px;
   height: 338px;
-  /* background-color: red; */
   position: absolute;
-  top: 470px;
-  left: 0px;
+  top: 490px;
+  left: 150px;
 }
 
 ul#mainmenu_list{
@@ -125,7 +123,7 @@ ul#mainmenu_list{
   height: 100%;
   font-size: 20px;
   line-height: 15px;
-  text-align: right;
+  text-align: left;
 }
 
 ul#mainmenu_list>li{
@@ -135,14 +133,18 @@ ul#mainmenu_list>li{
   top: 0;
   left: 0;
 }
-
+ul#mainmenu_list>li>a>img{
+  width: 16px;
+  height: 12.7px;
+}
 ul#mainmenu_list>li>a{
   font: normal 15px/15px 'Roboto';
   text-decoration: none;
-  
+  color: #0A013D;
 }
 
-ul#mainmenu_list>li>a::before{
+
+/* ul#mainmenu_list>li>a::before{
   content: "";
   display: block;
   width: 0px;
@@ -154,20 +156,10 @@ ul#mainmenu_list>li>a::before{
   left: 0px;
   opacity: 0;
   transition: 0.5s ease-in;
-}
+} */
 
-ul#mainmenu_list>li>a:hover::before{
-  /* display: block; */
-  opacity: 1;
-  width: 250px;
-}
-ul#mainmenu_list>li:last-child>a:hover::before{
-  display: none;
-}
 
-ul#mainmenu_list>li:last-child>a{
-  color: #06061D;
-}
+
 
 
 /* 메인메뉴리스트 끝 */

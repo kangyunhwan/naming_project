@@ -9,7 +9,6 @@ document.addEventListener('DOMContentLoaded',()=>{
 
   let mainMenuWidth = mainMenu.offsetWidth
 
-
   let buttonClickState = false;
 
   gsap.set(mainMenu,{right:-mainMenuWidth,opacity:0,scale:(0,0)})
@@ -19,6 +18,9 @@ document.addEventListener('DOMContentLoaded',()=>{
   // MenuBtn.addEventListener('mouseenter', enterWidth) 
   // MenuBtn.addEventListener('mouseleave', leaveWidth)
   MenuBtn.addEventListener('click',activateMainMenu)
+  for(item of mainMenuLi){
+    item.addEventListener('mouseenter',activateMenuColor)
+  }
 
   // function enterWidth(){
   //   gsap.to(firstSpan,{width:33,duration:0.3, ease:'power1.out'})
@@ -35,29 +37,22 @@ document.addEventListener('DOMContentLoaded',()=>{
     if(buttonClickState==false){
       firstSpan.classList.add('selected')
       secondSpan.classList.add('selected')
-      
-      // gsap.to(firstSpan, {width:`100%`,duration:0.3, ease:'power1.out'})
-      // gsap.to(secondSpan, {bottom:19,width:`100%`,duration:0.3, ease:'power1.out'})
-      gsap.to(mainMenu, {right:-481,opacity:1,scale:(5,5),duration:1, ease:'power1.out', onComplete:()=>{
-        gsap.set(mainMenuLi,{left:20,onComplete:()=>{
-          gsap.to(mainMenuLi[0], {opacity:1,left:0,duration:0.1,ease:'power1.out',onComplete:()=>{
-            gsap.to(mainMenuLi[1], {opacity:1,left:0,duration:0.1})
-          }})
-        }})
-
-      }})
+      gsap.to(mainMenu, {right:-481,opacity:1,scale:(5,5),duration:1, ease:'power1.out'})
       buttonClickState=true;
     }else{
       firstSpan.classList.remove('selected')
       secondSpan.classList.remove('selected')
-      // gsap.to(firstSpan,{width:100+"%",duration:0.3, ease:'power1.out'})
-      // gsap.to(secondSpan,{width:33,bottom:0,duration:0.3, ease:'power1.out'})
-      gsap.to(mainMenuLi,{opacity:0,onComplete:()=>{
-        gsap.to(mainMenu,{top:-400,right:-mainMenuWidth,opacity:0,scale:(0,0),duration:1, ease:'power1.out'})
-      }})
-     
+        gsap.to(mainMenu,{right:-mainMenuWidth,opacity:0,scale:(0,0),duration:1, ease:'power1.out'})
+        gsap.set(mainMenuLi,{color: `#0A013D`})
+        gsap.set(mainMenu,{backgroundColor: `#C37C3B`})
       buttonClickState=false;
     }
+  }
+
+  function activateMenuColor(){
+    gsap.to(mainMenu,{backgroundColor:`#1E1E1E`,duration:0.5,ease:'power1.out',onComplete:()=>{
+      gsap.to(mainMenuLi,{color:'white',duration:0.5,ease:'power1.out'})
+    }})
   }
 
 
