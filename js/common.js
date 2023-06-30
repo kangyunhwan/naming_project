@@ -40,20 +40,21 @@ document.addEventListener('DOMContentLoaded',()=>{
       secondSpan.classList.add('selected')
       gsap.to(mainMenu, {right:-481,opacity:1,scale:(5,5),duration:1, ease:'power1.out',onComplete:()=>{
         for(let i=0; i<mainMenuLi.length; i++){
-          console.log(mainMenuLi[i])
-          gsap.to(mainMenuLi[i],{left:0,opacity:1,delay:0.1*i,ease:'power1.out'})
+          gsap.to(mainMenuLi[i],{left:0,opacity:1,delay:0.1*i,ease:'power1.out',onComplete:()=>{
+            buttonClickState=true;
+          }})
         }        
       }})
-      buttonClickState=true;
+   
       
     }else{
       firstSpan.classList.remove('selected')
       secondSpan.classList.remove('selected')
-
         gsap.set(mainMenuLi,{left:100, opacity:0})
-        gsap.to(mainMenu,{right:-mainMenuWidth,opacity:0,scale:(0,0),duration:1, ease:'power1.out'})
-   
-      buttonClickState=false;
+        gsap.to(mainMenu,{right:-mainMenuWidth,opacity:0,scale:(0,0),duration:1, ease:'power1.out',onComplete:()=>{
+          buttonClickState=false;
+        }})
+
     }
   }
 
