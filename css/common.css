@@ -241,7 +241,6 @@ div#footer_form{
   right: 0;
   width: 800px;
   height: 600px;
-  background-color: red;
 }
 div.footer_input_box{
   width: 100%;
@@ -284,7 +283,7 @@ div#footer_check_wrap{
   height: 80px;
   margin-top: 50px;
   position: relative;
-  top: 500px;
+  top: 400px;
   left: 0;
 }
 
