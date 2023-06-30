@@ -52,7 +52,14 @@ document.addEventListener('DOMContentLoaded',()=>{
     }
   }
 
+  function slideNextImg(index){
+    //Next => 밑에서 위로 올라오는 것
+    //Prev => 위에서 밑으로 내려오는 것
+    gsap.to(portfolioSildeLi[currentIndex],{top:-portfolioSildHeight, opacity:0, duration:0.5, ease:'power1.out'})
+    //초기화
+    gsap.set(portfolioSildeLi[currentIndex],)
 
+  }
 
 
 
