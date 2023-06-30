@@ -1,0 +1,46 @@
+html, body{
+  width:100%;
+  height: 100%;
+}
+
+div#portfolio_silde_wrap{
+  width:85%;
+  height: auto;
+  margin:0px auto;
+  background: rebeccapurple;
+  position:relative;
+  left:0px;
+  top:0px;
+}
+
+p#portfolio_title{
+  font: normal 160px "Roboto";
+  font-weight: 500;
+  color: #0A013D;
+  text-transform: uppercase;
+  text-align: right;
+  margin-top:260px;
+  margin-bottom:200px;
+}
+
+ul#portfolio_silde_list{
+  width: 100%;
+  height: 800px;
+  overflow: hidden;
+  position:relative;
+  left:0px;
+  top:0px;
+}
+li.portfolio_img_size{
+  width:100%;
+  height: 100%;
+  position: absolute;
+  left:0px;
+  top:0px;
+}
+li.portfolio_img_size>a>img{
+  width:100%;
+}
+
+div#portfolio_category_wrap{
+}
