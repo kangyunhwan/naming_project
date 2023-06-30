@@ -8,18 +8,6 @@ a{
   color:black;
 }
 
-
-div#portfolio_silde_wrap{
-  width:85%;
-  height: auto;
-  margin:0px auto;
-  background: rebeccapurple;
-  position:relative;
-  left:0px;
-  top:0px;
-  margin-bottom: 500px;
-}
-
 p#portfolio_title{
   font: normal 160px "Roboto";
   font-weight: 500;
@@ -28,6 +16,16 @@ p#portfolio_title{
   text-align: right;
   margin-top:260px;
   margin-bottom:200px;
+}
+
+div#portfolio_silde_wrap{
+  width:85%;
+  height: 800px;
+  margin:0px auto;
+  position:relative;
+  left:0px;
+  top:0px;
+  margin-bottom:200px ;
 }
 
 ul#portfolio_silde_list{
@@ -40,13 +38,32 @@ ul#portfolio_silde_list{
 }
 li.portfolio_img_size{
   width:100%;
-  height: 100%;
+  height: 800px;
   position: absolute;
   left:0px;
   top:0px;
 }
 li.portfolio_img_size>a>img{
   width:100%;
+}
+ul#portfolio_silde_btn_list{
+  width:20px;
+  height: 130px; /*(15+8*4)+15*/
+  position: absolute;
+  right:85px;
+  top:50%;
+  /* margin-top: -65px; */
+}
+
+ul#portfolio_silde_btn_list>li{
+  width:15px;
+  height: 15px;
+  border: solid 2px #0A013D;
+  border-radius: 8px;
+  margin-bottom: 8px;
+}
+ul#portfolio_silde_btn_list>li:last-child{
+  margin-bottom: 0px;
 }
 
 div#portfolio_category_wrap{
