@@ -59,11 +59,17 @@ ul#portfolio_silde_btn_list>li{
   width:15px;
   height: 15px;
   border: solid 2px #0A013D;
-  border-radius: 8px;
+  border-radius: 10px;
   margin-bottom: 8px;
 }
 ul#portfolio_silde_btn_list>li:last-child{
   margin-bottom: 0px;
+}
+ul#portfolio_silde_btn_list>li.selected{
+  width:20px;
+  height: 20px;
+  border:none;
+  background: #0A013D;
 }
 
 div#portfolio_category_wrap{
