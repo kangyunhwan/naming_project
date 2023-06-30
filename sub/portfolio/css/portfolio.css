@@ -1,0 +1,114 @@
+html, body{
+  width:100%;
+  height: 100%;
+}
+
+a{
+  text-decoration: none;
+  color:black;
+}
+
+p#portfolio_title{
+  font: normal 160px "Roboto";
+  font-weight: 500;
+  color: #0A013D;
+  text-transform: uppercase;
+  text-align: right;
+  margin-top:260px;
+  margin-bottom:200px;
+}
+
+div#portfolio_silde_wrap{
+  width:85%;
+  height: 800px;
+  margin:0px auto;
+  position:relative;
+  left:0px;
+  top:0px;
+  margin-bottom:200px ;
+}
+
+ul#portfolio_silde_list{
+  width: 100%;
+  height: 800px;
+  overflow: hidden;
+  position:relative;
+  left:0px;
+  top:0px;
+}
+li.portfolio_img_size{
+  width:100%;
+  height: 800px;
+  position: absolute;
+  left:0px;
+  top:0px;
+}
+li.portfolio_img_size>a>img{
+  width:100%;
+}
+ul#portfolio_silde_btn_list{
+  width:20px;
+  height: 130px; /*(15+8*4)+15*/
+  position: absolute;
+  right:85px;
+  top:50%;
+  /* margin-top: -65px; */
+}
+
+ul#portfolio_silde_btn_list>li{
+  width:15px;
+  height: 15px;
+  border: solid 2px #0A013D;
+  border-radius: 10px;
+  margin-bottom: 8px;
+}
+ul#portfolio_silde_btn_list>li:last-child{
+  margin-bottom: 0px;
+}
+ul#portfolio_silde_btn_list>li.selected{
+  width:20px;
+  height: 20px;
+  border:none;
+  background: #0A013D;
+}
+
+div#portfolio_category_wrap{
+  width:85%;
+  height:744px;/*auto 744px*/
+  margin:0px auto 100px;
+}
+
+ul#portfolio_category_title_list{
+  width:500px;
+  height: 30px;
+  margin-bottom: 80px;
+}
+ul#portfolio_category_title_list>li{
+  width:130px;
+  height: 28px;
+  border-right: solid 2px #0A013D;
+  margin-right: 50px;
+  float: left;
+}
+ul#portfolio_category_title_list>li:last-child{
+  border-right: none;
+  margin-right: 0px;
+}
+ul#portfolio_category_title_list>li>a{
+  font: normal 30px/30px "Roboto";
+  font-weight: 700;
+  color: #0A013D;
+  text-transform: uppercase;
+}
+
+ul#portfolio_category_thumbnail_list{
+  width:100%;
+  height: 634px;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-auto-rows: repeat(2, 1fr);
+  grid-gap: 20px;
+}
+ul#portfolio_category_thumbnail_list>li{
+  background: rgb(180, 215, 255);
+}

@@ -14,12 +14,127 @@
   <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="/css/common.css">
-  <link rel="stylesheet" href="/naming_portfolio/css/portfolio.css">
+  <link rel="stylesheet" href="/sub/portfolio/css/portfolio.css">
 
   <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.1/gsap.min.js' ></script>
   <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.1/ScrollTrigger.min.js' ></script>
+  <script src="/sub/portfolio/js/portfolio.js"></script>
 </head>
 <body>
   
+  
+    <!-- 헤더부분 시작 -->
+    <div id="header_wrap">
+
+      <div id="header_logo">
+        <a href="/index.html">
+            <svg width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M26.4727 15.3748C30.7907 15.3748 34.2911 11.9616 34.2911 7.75127C34.2911 3.54093 30.7907 0.127777 26.4727 0.127777C22.1547 0.127777 18.6543 3.54093 18.6543 7.75127C18.6543 11.9616 22.1547 15.3748 26.4727 15.3748Z" fill="white"/>
+              <path d="M0 0.127778V15.3748L0.18457 15.5547H15.8213L15.9524 15.247L0.315615 0L0 0.127778ZM2.22222 13.3879V4.92395L10.9025 13.3879H2.22222Z" fill="white"/>
+              <path d="M26.4727 19.3881C22.0596 19.3881 18.4697 22.8885 18.4697 27.1915C18.4697 31.4946 22.0596 34.995 26.4727 34.995C30.8857 34.995 34.4756 31.4946 34.4756 27.1915C34.4756 22.8885 30.8857 19.3881 26.4727 19.3881ZM32.2534 27.1915C32.2534 30.2996 29.6602 32.8282 26.4727 32.8282C23.2852 32.8282 20.6919 30.2996 20.6919 27.1915C20.6919 24.0835 23.2852 21.5549 26.4727 21.5549C29.6602 21.5549 32.2534 24.0835 32.2534 27.1915Z" fill="white"/>
+              <path d="M15.8213 19.0785H0.18457V34.3255H15.8213V19.0785Z" fill="white"/>
+            </svg>
+          <div id="header_logo_title">
+            <svg width="196" height="36" viewBox="0 0 196 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0.844727 1.79053H9.65056L22.3084 21.7275V1.79053H31.1142V34.6889H22.3084L9.65056 14.3794V34.6889H0.844727V1.79053Z" fill="white"/>
+            <path d="M34.0767 34.6889L45.5071 1.79053H56.5979L68.0283 34.6889H59.2225L56.0054 25.4835L45.0826 28.4134L42.8806 34.6871H34.0767V34.6889ZM47.7921 20.6117L53.7186 19.001L51.0516 11.2821L47.7921 20.6117Z" fill="white"/>
+            <path d="M99.6931 1.79053H108.709V34.6889H99.9035V18.2595L93.0024 34.6889H86.6957L79.7946 18.2595V34.6889H70.9888V1.79053H80.005L89.826 25.1955L99.6931 1.79053Z" fill="white"/>
+            <path d="M122.509 1.79053V34.6889H113.704V1.79053H122.509Z" fill="white"/>
+            <path d="M127.591 1.79053H136.397L149.054 21.7275V1.79053H157.86V34.6889H149.054L136.395 14.3794V34.6889H127.589V1.79053H127.591Z" fill="white"/>
+            <path d="M179.025 28.4134C181.282 28.4134 183.132 27.9041 184.571 26.8854C186.011 25.8668 186.871 24.4235 187.153 22.5518H178.22V15.452H196V20.034C196 22.5662 195.555 24.796 194.667 26.7217C193.778 28.6473 192.565 30.2581 191.026 31.5502C189.486 32.8442 187.689 33.8268 185.629 34.5017C183.569 35.1766 181.38 35.5132 179.067 35.5132C176.498 35.5132 174.106 35.0866 171.891 34.2336C169.675 33.3805 167.75 32.1909 166.112 30.663C164.475 29.1351 163.183 27.3138 162.238 25.1937C161.293 23.0755 160.821 20.7503 160.821 18.2181C160.821 15.686 161.293 13.3608 162.238 11.2425C163.183 9.12429 164.483 7.3012 166.133 5.77326C167.783 4.24533 169.737 3.05573 171.997 2.20268C174.254 1.34962 176.681 0.923096 179.278 0.923096C182.777 0.923096 185.797 1.61778 188.337 3.00714C190.876 4.3965 193.163 6.45355 195.195 9.17828L189.396 13.9259C188.351 12.11 186.976 10.6648 185.269 9.59221C183.562 8.51959 181.522 7.98328 179.152 7.98328C177.882 7.98328 176.668 8.23164 175.513 8.72656C174.355 9.22147 173.346 9.91795 172.486 10.8106C171.624 11.705 170.933 12.7777 170.411 14.0302C169.889 15.2828 169.628 16.6794 169.628 18.2199C169.628 19.7623 169.868 21.157 170.348 22.4096C170.828 23.6622 171.491 24.7348 172.338 25.6293C173.185 26.5237 174.18 27.2112 175.322 27.6935C176.463 28.174 177.698 28.4134 179.025 28.4134Z" fill="white"/>
+            </svg>~
+          </div>
+        </a>
+      </div>
+  
+      <button id="header_main_menu">
+        <span class="header_short_line"></span>
+        <span class="header_long_line"></span>
+      </button>
+
+      <!-- <div id="mainmenu_wrap" class="blur">
+        <div id="mainmenu_list_box">
+          <ul id="mainmenu_list">
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">STORY</a></li>
+            <li><a href="#">ABOUT</a></li>
+            <li><a href="#">PORTFOLIO</a></li>
+            <li><a href="#">We Are <br> Naming </a></li>
+          </ul>
+        </div>
+      </div> -->
+  
+    </div>
+    <!-- 헤더부분 끝 -->
+
+    <!--portfolio 페이지 시작-->
+    <p id="portfolio_title">portfolio</p>
+    <div id="portfolio_silde_wrap">
+      <ul id="portfolio_silde_list">
+        <li class="portfolio_img_size">
+          <a href="#">
+            <img src="/sub/portfolio/images/portfolio_thum_img.jpg">
+          </a>
+        </li>
+        <li class="portfolio_img_size" style="background-color: red;">
+          <a href="#"></a>
+        </li>
+        <li class="portfolio_img_size" style="background-color: orange;">
+          <a href="#"></a>
+        </li>
+        <li class="portfolio_img_size" style="background-color: yellow;">
+          <a href="#"></a>
+        </li>
+        <li class="portfolio_img_size" style="background-color: green;">
+          <a href="#"></a>
+        </li>
+      </ul>
+
+      <ul id="portfolio_silde_btn_list">
+        <li class="selected"><a href="#"></a></li>
+        <li><a href="#"></a></li>
+        <li><a href="#"></a></li>
+        <li><a href="#"></a></li>
+        <li><a href="#"></a></li>
+      </ul>
+    </div>
+
+
+
+
+
+    <div id="portfolio_category_wrap">
+      <ul id="portfolio_category_title_list">
+        <li><a href="#">ui / ux</a></li>
+        <li><a href="#">bi / ci</a></li>
+        <li><a href="#">editor</a></li>
+      </ul>
+      <ul id="portfolio_category_thumbnail_list">
+        <li><a href="#">1</a></li>
+        <li><a href="#">2</a></li>
+        <li><a href="#">3</a></li>
+        <li><a href="#">4</a></li>
+        <li><a href="#">5</a></li>
+        <li><a href="#">6</a></li>
+        <li><a href="#">7</a></li>
+        <li><a href="#">8</a></li>
+        <li><a href="#">9</a></li>
+        <li><a href="#">10</a></li>
+      </ul>
+    </div>
+
+
+
+
+
+
+    
+    
+
+
+
+
+    
+    <!--portfolio 페이지 끝-->
 </body>
 </html>
