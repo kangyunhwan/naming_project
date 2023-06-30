@@ -31,7 +31,7 @@ div#story_wrap span{
   position:absolute;
 }
 span.story_shape1{
-  left:331px;
+  left:400px;
   top:90px;
   animation:story_shape_ani1 1.3s infinite;
 }
@@ -69,7 +69,8 @@ span.story_shape7{
 
 div#story_video_wrap{
   width: 100%;
-  height: 1000px;
+  height: 700px;
+  background:#C37C3B;
   
 }
 div#story_video_box{

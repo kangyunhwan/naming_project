@@ -1,10 +1,11 @@
 div#customer_wrap{
   width: 100%;
-  height: 600px;
+  height: auto;
   background-color:rgba(217, 217, 217, 1);
   position:relative;
   left:0;
   top:0;
+  margin-top:450px;
 }
 div#customer_title_wrap{
   width:100%;
@@ -171,7 +172,7 @@ div#customer_list_wrap{
   position:relative;
   left:0;
   top:0;
-  margin-top:150px;
+  margin-top:140px;
 }
 
 div#customer_autoplay_list_box{
@@ -213,20 +214,45 @@ ul#customer_autoplay_list>li>span{
   display: block;
   width:72%;
   height:72%;
-  background-color: white;
+  background-color:white;
   border-radius: 50%;
   border: 1px solid #BEBEBE;
   box-sizing: border-box;
+  
   transition:0.5s ease;
+  position:relative;
+  left:0;
+  top:0;
+  overflow:hidden;
 
+  
+  
 }
 
+ul#customer_autoplay_list>li>span>img{
+  display:block;
+  width:60%;
+  position:absolute;
+  left:50%;
+  top:50%;
+  transform:translate(-50%,-50%);
+  transition:0.5s;
+  
+}
 
+ul#customer_autoplay_list>li>span.osulloc img{
+  width:50%;
+}
 ul#customer_autoplay_list>li.selected>span{
   border: 4px solid #22226B;
   box-sizing: border-box;
   width:100%;
   height:100%;
+  
+  
+}
+ul#customer_autoplay_list>li.selected>span>img{
+  width:70%;
   
 }
 

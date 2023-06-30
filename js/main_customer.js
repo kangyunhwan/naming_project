@@ -57,6 +57,8 @@ document.addEventListener("DOMContentLoaded",()=>{
 
   let isSlide=false;
 
+  
+
   autoPlay();
 
   gsap.set(customerListBox,{width:customerLiWidth*5,height:customerLiWidth})
@@ -72,7 +74,7 @@ document.addEventListener("DOMContentLoaded",()=>{
   }
 
   function autoPlay(){
-    timer=setInterval(slideNextCustomer,1000)
+    timer=setInterval(slideNextCustomer,3000)
   }
 
   function slideNextCustomer(){
@@ -86,6 +88,11 @@ document.addEventListener("DOMContentLoaded",()=>{
 
       customerLi[currentIndex].classList.remove('selected')
       customerLi[nextIndex].classList.add('selected')
+
+      customerLi[currentIndex].children[0].children[0].src=`/image/customer_company_logo${currentIndex}_gray.jpg`
+      customerLi[nextIndex].children[0].children[0].src=`/image/customer_company_logo${nextIndex}_color.jpg`
+
+
       currentIndex=nextIndex;
   
       let currentPosition=customerList.offsetLeft;
@@ -108,6 +115,10 @@ document.addEventListener("DOMContentLoaded",()=>{
 
       customerLi[currentIndex].classList.remove('selected')
       customerLi[nextIndex].classList.add('selected')
+
+      customerLi[currentIndex].children[0].children[0].src=`/image/customer_company_logo${currentIndex}_gray.jpg`
+      customerLi[nextIndex].children[0].children[0].src=`/image/customer_company_logo${nextIndex}_color.jpg`
+
       currentIndex=nextIndex;
   
       let currentPosition=customerList.offsetLeft;
