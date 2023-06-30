@@ -5,12 +5,14 @@ document.addEventListener('DOMContentLoaded',()=>{
   const firstSpan = MenuBtn.children[0] // 첫번쨰 span 태그
   const secondSpan = MenuBtn.children[1] // 두번쨰 span 태그
   const mainMenu = document.querySelector('#mainmenu_wrap')
+  const mainMenuLi = document.querySelectorAll('#mainmenu_list>li')
 
+  
 
   let mainMenuWidth = mainMenu.offsetWidth
 
   let buttonClickState = false;
-
+  gsap.set(mainMenuLi,{opacity:0,left:20})
   gsap.set(mainMenu,{right:-mainMenuWidth,opacity:0,scale:(0,0)})
 
   // MenuBtn.addEventListener('mouseenter', enterWidth) 
@@ -34,15 +36,20 @@ document.addEventListener('DOMContentLoaded',()=>{
       secondSpan.classList.add('selected')
       // gsap.to(firstSpan, {width:`100%`,duration:0.3, ease:'power1.out'})
       // gsap.to(secondSpan, {bottom:19,width:`100%`,duration:0.3, ease:'power1.out'})
-      gsap.to(mainMenu, {right:-481,opacity:1,scale:(5,5),duration:1, ease:'power1.out'})
+      gsap.to(mainMenu, {right:-481,opacity:1,scale:(5,5),duration:1, ease:'power1.out',onComplete:()=>{
+        gsap.to(mainMenuLi, {opacity:1,left:0,duration:0.5, ease:'power1.out'})
+      }})
       buttonClickState=true;
     }else{
       firstSpan.classList.remove('selected')
       secondSpan.classList.remove('selected')
       // gsap.to(firstSpan,{width:100+"%",duration:0.3, ease:'power1.out'})
       // gsap.to(secondSpan,{width:33,bottom:0,duration:0.3, ease:'power1.out'})
-      gsap.to(mainMenu,{top:-400,right:-mainMenuWidth,opacity:0,scale:(0,0),duration:1, ease:'power1.out'})
+      gsap.to(mainMenuLi,{opacity:0,left:20,duriation:0.5, ease:'power1.out',onComplete:()=>{
+        gsap.to(mainMenu,{top:-400,right:-mainMenuWidth,opacity:0,scale:(0,0),duration:1, ease:'power1.out'})
+      }})
       buttonClickState=false;
+      
     }
   }
 

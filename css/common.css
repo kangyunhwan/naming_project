@@ -158,7 +158,7 @@ ul#mainmenu_list>li>a::before{
 ul#mainmenu_list>li>a:hover::before{
   /* display: block; */
   opacity: 1;
-  width: 300px;
+  width: 250px;
 }
 ul#mainmenu_list>li:last-child>a:hover::before{
   display: none;
