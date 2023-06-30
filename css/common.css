@@ -29,6 +29,7 @@ div#header_logo>a>svg{
 }
 div#header_logo svg path{
   fill:#22226b;
+  transition:1s;
 }
 
 div#header_logo_title{

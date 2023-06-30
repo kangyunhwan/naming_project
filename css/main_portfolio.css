@@ -8,6 +8,7 @@ div#portfolio_wrap{
   position:relative;
   left:0;
   top:0;
+  
 }
 div#portfolio_bg_text_wrap{
   width:100%;
@@ -70,7 +71,7 @@ ul#portfolio_list{
   flex-wrap:wrap;
   flex-direction:column;
   justify-content:space-around;
-  margin:0 auto;
+  margin:0 auto 0px;
 }
 ul#portfolio_list li{
   width:80%;

@@ -21,17 +21,17 @@ document.addEventListener('DOMContentLoaded',()=>{
   
   gsap.to(mainFooterInnerWrap1,{scrollTrigger:{
     trigger:mainFooterInnerWrap1,
-    markers:true,
+    // markers:true,
     start:'0% 0%',
     end:'100% 0%',
     toggleClass:'activate'
   },onComplete:()=>{
     gsap.to(mainFooterSmile,{top:293,opacity:1,onComplete:()=>{
       mainFooterSmile.classList.add('activate');
-      gsap.to(mainFooterInnerWrap2,{top:100, opacity:1, duration:0.7,})
+      gsap.to(mainFooterInnerWrap2,{top:0, duration:0.7,})
     },scrollTrigger:{
         trigger:mainFooterInnerWrap1,
-        markers:true,
+        // markers:true,
         start:'0% 0%',
         end:'100% 0%',
         // toggleActions:'play reverse play reverse'

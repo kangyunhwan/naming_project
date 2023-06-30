@@ -4,11 +4,11 @@ document.addEventListener("DOMContentLoaded",()=>{
 
   
 
-  let endY=portfolioList.offsetHeight-window.innerHeight;
+  let endY=portfolioList.offsetHeight-window.innerHeight+500;
 
   gsap.to(portfolioList,{top:-endY,scrollTrigger:{
     trigger:portfolioWrap,
-    // markers:true,
+    markers:true,
     start:'top top',
     end:`${endY} top`,
     pin:true,
