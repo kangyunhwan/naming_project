@@ -4,14 +4,17 @@ document.addEventListener('DOMContentLoaded',()=>{
   const MenuBtn = document.querySelector('#header_main_menu')  // 메뉴 버튼 찾기
   const firstSpan = MenuBtn.children[0] // 첫번쨰 span 태그
   const secondSpan = MenuBtn.children[1] // 두번쨰 span 태그
-  const mainMenu = document.querySelector('#mainmenu_wrap')
 
+  const mainMenuWrap = document.querySelector('#mainmenu_wrap')
+  const mainMenuInner=document.querySelector("#mainmenu_list_box");
 
-  let mainMenuWidth = mainMenu.offsetWidth
+  const mainMenu=document.querySelectorAll("#mainmenu_list>li");
+
+  
 
   let buttonClickState = false;
 
-  gsap.set(mainMenu,{right:-mainMenuWidth,opacity:0,scale:(0,0)})
+  // gsap.set(mainMenu,{right:-mainMenuWidth,opacity:0,scale:(0,0)})
 
   // MenuBtn.addEventListener('mouseenter', enterWidth) 
   // MenuBtn.addEventListener('mouseleave', leaveWidth)
@@ -32,17 +35,29 @@ document.addEventListener('DOMContentLoaded',()=>{
     if(buttonClickState==false){
       firstSpan.classList.add('selected')
       secondSpan.classList.add('selected')
-      // gsap.to(firstSpan, {width:`100%`,duration:0.3, ease:'power1.out'})
-      // gsap.to(secondSpan, {bottom:19,width:`100%`,duration:0.3, ease:'power1.out'})
-      gsap.to(mainMenu, {right:-481,opacity:1,scale:(5,5),duration:1, ease:'power1.out'})
-      buttonClickState=true;
+      gsap.set(mainMenuWrap,{display:'block'})
+      gsap.to(mainMenuInner,{scale:(8),opacity:1,duration:1,onComplete:()=>{
+        gsap.set(mainMenuInner,{borderRadius:0})
+        gsap.set('body,html',{overflow:'hidden'})
+        for(i=0;i<=mainMenu.length;i++){
+          gsap.to(mainMenu[i],{left:0,opacity:1,delay:0.2*i})
+        }
+        buttonClickState=true
+        
+      }})
+      
     }else{
       firstSpan.classList.remove('selected')
       secondSpan.classList.remove('selected')
       // gsap.to(firstSpan,{width:100+"%",duration:0.3, ease:'power1.out'})
       // gsap.to(secondSpan,{width:33,bottom:0,duration:0.3, ease:'power1.out'})
-      gsap.to(mainMenu,{top:-400,right:-mainMenuWidth,opacity:0,scale:(0,0),duration:1, ease:'power1.out'})
-      buttonClickState=false;
+      gsap.set(mainMenu,{opacity:0,left:-50})
+      gsap.set(mainMenuInner,{borderRadius:`50%`})
+      gsap.to(mainMenuInner,{scale:(1),opacity:0,duration:1,onComplete:()=>{
+        gsap.set(mainMenuWrap,{display:'none'})
+        gsap.set('body,html',{overflow:'visible'})
+        buttonClickState=false
+      }})
     }
   }
 
