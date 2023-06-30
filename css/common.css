@@ -153,6 +153,7 @@ ul#mainmenu_list>li>a{
 
 ul#mainmenu_list>li>a:hover{
   color: white;
+  letter-spacing: 2px;
   /* width: 300px; */
   /* opacity: 1; */
 
