@@ -13,6 +13,7 @@ document.addEventListener('DOMContentLoaded',()=>{
   
 
   let buttonClickState = false;
+  let checkIndex=0;
 
   // gsap.set(mainMenu,{right:-mainMenuWidth,opacity:0,scale:(0,0)})
 
@@ -39,14 +40,20 @@ document.addEventListener('DOMContentLoaded',()=>{
       gsap.to(mainMenuInner,{scale:(8),opacity:1,duration:1,onComplete:()=>{
         gsap.set(mainMenuInner,{borderRadius:0})
         gsap.set('body,html',{overflow:'hidden'})
-        for(i=0;i<=mainMenu.length;i++){
-          gsap.to(mainMenu[i],{left:0,opacity:1,delay:0.2*i})
+        for(i=0;i<mainMenu.length;i++){
+          gsap.to(mainMenu[i],{left:0,opacity:1,delay:0.2*i,onComplete:()=>{
+            checkIndex++;
+            if(checkIndex==mainMenu.length){
+              buttonClickState=true;
+            }
+          }})
         }
-        buttonClickState=true
         
+        
+      
       }})
       
-    }else{
+    }else if(buttonClickState==true){
       firstSpan.classList.remove('selected')
       secondSpan.classList.remove('selected')
       // gsap.to(firstSpan,{width:100+"%",duration:0.3, ease:'power1.out'})
@@ -57,6 +64,7 @@ document.addEventListener('DOMContentLoaded',()=>{
         gsap.set(mainMenuWrap,{display:'none'})
         gsap.set('body,html',{overflow:'visible'})
         buttonClickState=false
+        checkIndex=0
       }})
     }
   }

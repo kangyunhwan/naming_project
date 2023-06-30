@@ -18,9 +18,9 @@ div#header_wrap{
 div#header_logo{
   width:240px;
   height: 35px;
-  position:absolute;
+  position:fixed;
   left:85px;
-  bottom:0;
+  top:70px;
   z-index:99
 }
 
@@ -53,15 +53,15 @@ div#header_logo_title>svg{
 button#header_main_menu{
   width: 54px;
   height: 25px;
-  position:absolute;
+  position:fixed;
   right:85px;
-  bottom:0;
+  top:70px;
   padding: 0;
   background: none;
   border: none;
   /* opacity: 0; */
   cursor: pointer;
-  z-index: 9;
+  z-index: 100;
 }
 /* button#header_main_menu:hover span.header_short_line{
   width:65%;
