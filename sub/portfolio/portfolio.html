@@ -13,12 +13,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
   
     <link rel="stylesheet" href="/css/common.css">
-    <link rel="stylesheet" href="/sub/portfolio_sub/css/portfolio_sub.css">
+    <link rel="stylesheet" href="/sub/portfolio/css/portfolio.css">
   
     <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.1/gsap.min.js' ></script>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.1/ScrollTrigger.min.js' ></script>
     <script src="/js/common.js"></script>
-    <script src="/sub/portfolio_sub/js/portfolio_sub.js"></script>
+    <script src="/sub/portfolio/js/portfolio.js"></script>
 </head>
 <body>
     <!-- 헤더부분시작 -->
@@ -54,12 +54,19 @@
       <div id="mainmenu_wrap" class="blur">
         <div id="mainmenu_list_box">
           <ul id="mainmenu_list">
-            <li><a href="#">HOME</a></li>
-            <li><a href="#">STORY</a></li>
-            <li><a href="#">ABOUT</a></li>
-            <li><a href="#">PORTFOLIO</a></li>
-            <li><a href="#">CONTACT</a></li>
-            <li><a href="#">We Are <br> Naming </a></li>
+            <li>
+              <a href="/index.html">
+                <!-- <img src="/image/mainMenuLogo.png" alt=""> -->
+                <svg id="mainmenu_home" width="88" height="72" viewBox="0 0 88 72" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M4 45L44 5L84 45" stroke="#C37C3B" stroke-width="7" stroke-linecap="round"/>
+                  <path d="M18.2104 31.8423V68.1581H67.6841V31.8423" stroke="#C37C3B" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>                
+              </a>
+            </li>
+            <li><a href="/sub/about/about.html">ABOUT</a></li>
+            <li><a href="/sub/story/story.html">STORY</a></li>
+            <li><a href="/sub/contact/contact.html">CONTACT</a></li>
+            <li><a href="/sub/portfolio/portfolio.html">PORTFOLIO</a></li>
           </ul>
         </div>
       </div>
@@ -69,6 +76,7 @@
 
 
     <!--portfolio_sub start-->
+    <!-- 규리누나 마크업 시작 -->
     <div id="portfolio_sub_wrap_00">
         <p id="portfolio_sub_main_title">
             RestPET
@@ -116,30 +124,56 @@
     </div>
     <div id="portfolio_sub_wrap_02">
         <p id="portfolio_sub_logo_00">
-            <img src="/sub/portfolio_sub/images/portfolio_sub_foot.png" alt="">
+            <img src="/sub/portfolio/images/portfolio_sub_foot.png" alt="">
         </p>
         <p id="portfolio_sub_text_03">
             애완동물이 자연 속에서<br>편안히 쉬는 모습을 상징
         </p>
         <p id="portfolio_sub_logo_01">
-            <img src="/sub/portfolio_sub/images/portfolio_sub_text00.png" alt="">
+            <img src="/sub/portfolio/images/portfolio_sub_text00.png" alt="">
         </p>
         <p class="portfolio_sub_text_04">
             Rest : 쉬다, 휴식을 취하다<br>PET : 애완동물 
         </p>
     </div>
-    <div id="portfolio_sub_square_color">
-        <p id="portfolio_sub_square_01">
+    <div id="portfolio_sub_wrap_03">
+      <div id="portfolio_sub_square_box">
+        <div id="portfolio_color_box_01">
+          <p id="portfolio_sub_square_01">
             R:136 G:219 B:117<br>#88db75
-        </p>
-        <p id="portfolio_sub_square_02">
+          </p>
+        </div>
+        <div id="portfolio_color_box_02">
+          <p id="portfolio_sub_square_02">
             R:212 G:234 B:255<br>#d4eaff
-        </p>
-        <p id="portfolio_sub_square_03">
+          </p>
+        </div>
+        <div id="portfolio_color_box_03">
+          <p id="portfolio_sub_square_03">
             R:241 G:255 B:81<br>#f1ff51
-        </p>
+          </p>
+        </div>
+      </div>
     </div>
+   <!-- 여기까지 규리누나 마크업입니다! -->
     
+
+    <!-- 나연누나 마크업 레이아웃 시작 -->
+
+    <div id="portfolio_sub_wrap_04">
+      <div id="portfolio_travle_App_box">
+
+      </div>
+
+      <div id="portfolio_sub_wrap_04_img">
+        
+      </div>
+    </div>
+
+
+
+
+
     <!--portfolio_sub end--> 
     
      <!-- 푸터 시작 -->
