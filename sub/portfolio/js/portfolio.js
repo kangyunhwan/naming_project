@@ -17,13 +17,22 @@ document.addEventListener('DOMContentLoaded',()=>{
   initEvent()
 
   function initEvent(){
+
     for(item of portfolioDot){
       item.addEventListener('mouseenter',overDot)
     }
-    for(item of portfolioDot){
-      item.addEventListener('mouseenter',autoStop)
-    }
     
+    for(item of portfolioDot){
+      item.addEventListener('mouseenter',()=>{
+        clearInterval(timer)
+      })
+    }
+
+    for(item of portfolioDot){
+      item.addEventListener('mouseleave',()=>{
+        timer=setInterval(addPortfolioIndex,4000)
+      })
+    }
   }
   
 
@@ -36,10 +45,6 @@ document.addEventListener('DOMContentLoaded',()=>{
     activateDot(nextIndex);
 
   }
-
-  function autoStop(){
-    clearInterval(timer)
-  }
   
   function overDot(){
     nextIndex=getIndex(this)
@@ -47,15 +52,15 @@ document.addEventListener('DOMContentLoaded',()=>{
     // alert(nextIndex)
     
     if(nextIndex>currentIndex){
-      slideNextImg(nextIndex)}
-    // }else if(nextIndex<currentIndex){
-    //   slidePrevImg(nextIndex)
-    // }
+      slideNextImg(nextIndex)
+    }else if(nextIndex<currentIndex){
+      slidePrevImg(nextIndex)
+    }
   }
 
   gsap.set(portfolioSildeLi,{top:-portfolioSildHeight, opacity:0})
   gsap.set(portfolioSildeLi[0],{top:0, opacity:1})
-  
+
 
   function getIndex(checkMenu){
     let selectedIndex=0;
@@ -87,7 +92,7 @@ document.addEventListener('DOMContentLoaded',()=>{
     gsap.to(portfolioSildeLi[currentIndex],{top:-portfolioSildHeight, opacity:0, duration:1, ease:'power1.out'})
     
     //다음에 들어올 순번 모션전 세팅
-    gsap.set(portfolioSildeLi[index],{top:-portfolioSildHeight, opacity:0})
+    gsap.set(portfolioSildeLi[index],{top:portfolioSildHeight, opacity:0})
 
     gsap.to(portfolioSildeLi[index],{top:0,opacity:1, duration:1, ease:'power1.out'})
 
@@ -95,6 +100,17 @@ document.addEventListener('DOMContentLoaded',()=>{
 
   }
 
+  function slidePrevImg(index){
+        //다시 초기화
+        gsap.to(portfolioSildeLi[currentIndex],{top:portfolioSildHeight, opacity:0, duration:1, ease:'power1.out'})
+    
+        //다음에 들어올 순번 모션전 세팅
+        gsap.set(portfolioSildeLi[index],{top:-portfolioSildHeight, opacity:0})
+    
+        gsap.to(portfolioSildeLi[index],{top:0,opacity:1, duration:1, ease:'power1.out'})
+    
+        currentIndex=index;
+  }
 
 
 })

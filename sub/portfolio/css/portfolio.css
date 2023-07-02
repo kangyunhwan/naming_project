@@ -7,7 +7,14 @@ a{
   text-decoration: none;
   color:black;
 }
-
+div#portfolio_title_wrap{
+  width:85%;
+  height: auto;
+  margin: 0px auto;
+  position: relative;
+  left:0px;
+  top:0px;
+}
 p#portfolio_title{
   font: normal 160px "Roboto";
   font-weight: 500;
