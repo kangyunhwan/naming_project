@@ -1,37 +1,61 @@
 document.addEventListener('DOMContentLoaded',()=>{
-  alert('test')
   const portfolioSildeWrap=document.querySelector('#portfolio_silde_wrap')
   const portfolioSildeList=document.querySelector('#portfolio_silde_list')
   const portfolioSildeLi=document.querySelectorAll('#portfolio_silde_list>li')
   const portfolioDot=document.querySelectorAll('#portfolio_silde_btn_list>li')
   
-  let portfolioSildHeight=portfolioSildeList.offsetHeight;
+  let portfolioSildHeight=portfolioSildeWrap.offsetHeight;
   let portfolioLength=portfolioSildeLi.length;
 
   // let selectedDot=portfolioSildeDotBtn[0];
   let currentIndex=0;
   let selectedDot=portfolioDot[0]
-  let nextIndex=1;
+  let nextIndex=null;
   
+  let timer=setInterval(addPortfolioIndex,4000)
+
   initEvent()
 
   function initEvent(){
     for(item of portfolioDot){
       item.addEventListener('mouseenter',overDot)
     }
+    for(item of portfolioDot){
+      item.addEventListener('mouseenter',autoStop)
+    }
+    
+  }
+  
+
+  function addPortfolioIndex(){
+    nextIndex=currentIndex+1;
+    if(nextIndex>=portfolioLength){
+      nextIndex=0;
+    }
+    slideNextImg(nextIndex);
+    activateDot(nextIndex);
+
   }
 
+  function autoStop(){
+    clearInterval(timer)
+  }
+  
   function overDot(){
     nextIndex=getIndex(this)
     activateDot(nextIndex);
     // alert(nextIndex)
     
     if(nextIndex>currentIndex){
-      slideNextImg(nextIndex)
-    }else if(nextIndex<currentIndex){
-      slidePrevImg(nextIndex)
-    }
+      slideNextImg(nextIndex)}
+    // }else if(nextIndex<currentIndex){
+    //   slidePrevImg(nextIndex)
+    // }
   }
+
+  gsap.set(portfolioSildeLi,{top:-portfolioSildHeight, opacity:0})
+  gsap.set(portfolioSildeLi[0],{top:0, opacity:1})
+  
 
   function getIndex(checkMenu){
     let selectedIndex=0;
@@ -52,12 +76,22 @@ document.addEventListener('DOMContentLoaded',()=>{
     }
   }
 
+
+  //Next => 밑에서 위로 올라오는 것 top -
+  //Prev => 위에서 밑으로 내려오는 것 top +
+
+
   function slideNextImg(index){
-    //Next => 밑에서 위로 올라오는 것
-    //Prev => 위에서 밑으로 내려오는 것
-    gsap.to(portfolioSildeLi[currentIndex],{top:-portfolioSildHeight, opacity:0, duration:0.5, ease:'power1.out'})
-    //초기화
-    gsap.set(portfolioSildeLi[currentIndex],)
+    
+    //다시 초기화
+    gsap.to(portfolioSildeLi[currentIndex],{top:-portfolioSildHeight, opacity:0, duration:1, ease:'power1.out'})
+    
+    //다음에 들어올 순번 모션전 세팅
+    gsap.set(portfolioSildeLi[index],{top:-portfolioSildHeight, opacity:0})
+
+    gsap.to(portfolioSildeLi[index],{top:0,opacity:1, duration:1, ease:'power1.out'})
+
+    currentIndex=index;
 
   }
 
