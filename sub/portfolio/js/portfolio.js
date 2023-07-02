@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded',()=>{
-  
+  alert('test')
   const portfolioSildeWrap=document.querySelector('#portfolio_silde_wrap')
   const portfolioSildeList=document.querySelector('#portfolio_silde_list')
   const portfolioSildeLi=document.querySelectorAll('#portfolio_silde_list>li')
