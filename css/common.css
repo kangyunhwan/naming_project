@@ -6,20 +6,22 @@ body{
 }
 div#header_wrap{
   width:100%;
-  height:35px;
+  height:85px;
   position:fixed;
   left:0;
-  top:75px;
-  z-index:999;
+  top:0px;
+  z-index:100;
+  /* overflow:hidden; */
   /* mix-blend-mode: difference; */
   /* background-color: red; */
 }
 div#header_logo{
   width:240px;
   height: 35px;
-  position:absolute;
+  position:fixed;
   left:85px;
-  top:0;
+  top:70px;
+  z-index:99
 }
 
 
@@ -38,29 +40,36 @@ div#header_logo_title{
   overflow: hidden;
   position: absolute;
   left: 44px;
-  top:0px;
+  bottom:0px;
 }
 div#header_logo_title>svg{
   display: block;
   position:absolute;
   left: 0px;
-  top:0px;
+  bottom:0px;
 }
 
 
 button#header_main_menu{
   width: 54px;
   height: 25px;
-  position:absolute;
+  position:fixed;
   right:85px;
-  top:0;
+  top:70px;
   padding: 0;
   background: none;
   border: none;
   /* opacity: 0; */
   cursor: pointer;
-  z-index: 9;
+  z-index: 100;
 }
+/* button#header_main_menu:hover span.header_short_line{
+  width:65%;
+}
+button#header_main_menu:hover span.header_long_line{
+  width:100%;
+} */
+
 span.header_short_line{
   position: absolute;
   top: 0;
@@ -70,7 +79,7 @@ span.header_short_line{
   height: 6px;
   background-color: #22226B;
   border-radius: 20px;
-  transition: 1s;
+  transition: 0.5s;
 }
 
 span.header_short_line.selected{
@@ -82,7 +91,7 @@ span.header_long_line{
   position: absolute;
   bottom: 0;
   right: 0;
-  width: 30px;
+  width: 65%;
   height: 6px;
   background-color: #22226B;
   border-radius: 20px;
@@ -100,32 +109,42 @@ span.header_long_line.selected{
 /* 메인메뉴리스트 시작 */
 /* 메뉴리스트 시작 */
 div#mainmenu_wrap{
-  width: 962px;
-  height: 962px;
-  border-radius: 50%;
-  background-color: rgba(255, 255, 255, 0.7);
-  position: fixed;
-  top: -400px;
-  right: -481px;
+  width: 100%;
+  height: 100%;
+  position:fixed;
+  right:0px;
+  top:0px;
+  overflow:hidden;
+  display:none;
+  z-index:99;
 }
-div.blur{
-  backdrop-filter: blur(5px);
-}
+/* div.blur{
+  backdrop-filter: blur(4px);
+} */
 div#mainmenu_list_box{
-  width: 200px;
-  height: 338px;
-  /* background-color: red; */
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  background-color:rgba(30,30,30,1);
   position: absolute;
-  top: 470px;
-  left: 0px;
+  top: 0;
+  right: 0px;
+  opacity:0;
 }
 
 ul#mainmenu_list{
-  width: 100%;
+  width: 30%;
   height: 100%;
   font-size: 20px;
   line-height: 15px;
-  text-align: right;
+  text-align: left;
+  text-indent:250px;
+  /* display:none; */
+  position:absolute;
+  left:0;
+  top:0;
+  padding-top:8%;
+  box-sizing:border-box;
 }
 
 ul#mainmenu_list>li{
@@ -133,13 +152,26 @@ ul#mainmenu_list>li{
   margin-bottom: 10px;
   position: relative;
   top: 0;
-  left: 0;
+  left: -50px;
+  margin-bottom:50px;
+  opacity:0;
+}
+ul#mainmenu_list>li:last-child{
+  margin-bottom:0;
 }
 
 ul#mainmenu_list>li>a{
-  font: normal 15px/15px 'Roboto';
+  font: normal 80px 'Roboto';
   text-decoration: none;
+  color:#C37C3B;
+  transition:0.5s;
   
+}
+ul#mainmenu_list>li>a>svg>path{
+  transition:0.5s;
+}
+ul#mainmenu_list>li>a:hover{
+  color:white;
 }
 
 ul#mainmenu_list>li>a::before{
@@ -147,13 +179,17 @@ ul#mainmenu_list>li>a::before{
   display: block;
   width: 0px;
   height: 1px;
-  background-color: red;
+  
   line-height: 15px;
   position: absolute;
   top:10px;
   left: 0px;
   opacity: 0;
   transition: 0.5s ease-in;
+}
+
+ul#mainmenu_list>li:hover:first-child>a>svg>path{
+  stroke:white;
 }
 
 ul#mainmenu_list>li>a:hover::before{
@@ -165,9 +201,6 @@ ul#mainmenu_list>li:last-child>a:hover::before{
   display: none;
 }
 
-ul#mainmenu_list>li:last-child>a{
-  color: #06061D;
-}
 
 
 /* 메인메뉴리스트 끝 */
