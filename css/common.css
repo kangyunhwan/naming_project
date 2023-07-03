@@ -343,9 +343,39 @@ input::-webkit-inner-spin-button {
     -webkit-appearance: none;
 }
 
-div#footer_form>input.footer_input.footer_long{
+div.footer_input_long_box{
+  width: 100%;
   height: 210px;
-  margin-left: none;
+  position: relative;
+  top: 210px;
+  left: 0px;
+  border-bottom: 1px solid black;
+  box-sizing: border-box;
+  /* background-color: red; */
+}
+div.footer_input_long_box>span{
+  position: absolute;
+  left: 0;
+  top: 0;
+  font: normal 30px/210px 'Roboto';
+}
+
+textarea#footer_textarea{
+  position: absolute;
+  top: 0;
+  left: 22%;
+  width: 78%;
+  height: 100%;
+  border: none;
+  padding: 20px 0px;
+  box-sizing: border-box;
+  resize: none;
+  font: normal 30px 'Roboto';
+  background-color: transparent;
+  overflow: hidden;
+}
+textarea#footer_textarea:focus{
+  outline: none;
 }
 
 div#footer_check_wrap{
@@ -353,7 +383,7 @@ div#footer_check_wrap{
   height: 80px;
   margin-top: 50px;
   position: relative;
-  top: 400px;
+  top: 200px;
   left: 0;
 }
 
