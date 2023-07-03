@@ -20,7 +20,7 @@ div#about_wrap{
   width:100%;
   height:auto;
   overflow:hidden;
-  padding-top:227px;
+  padding-top:170px;
   box-sizing:border-box;
 }
 div#about_title_wrap{
@@ -36,8 +36,8 @@ div#about_title_wrap{
 h2#about_title{
   font:bold 160px "Roboto";
   color:#0a013d;
-  text-align:right;
-  margin-right:136px;
+  text-align:left;
+  margin-left:85px;
 }
 
 div.about_attention_wrap{

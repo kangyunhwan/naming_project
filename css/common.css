@@ -212,7 +212,23 @@ ul#mainmenu_list>li:last-child>a:hover::before{
 
 /* 메인메뉴리스트 끝 */
 
-
+ul#sub_gnb{
+  position:fixed;
+  right:85px;
+  top:70px;
+  z-index:9999;
+}
+ul#sub_gnb li{
+  text-align:right;
+  margin-bottom:10px;
+}
+ul#sub_gnb li:last-child{
+  margin-bottom:0;
+}
+ul#sub_gnb li a{
+  color:#666666;
+  font:normal 24px "Roboto";
+}
 
 
 
