@@ -9,15 +9,15 @@ div#logo_wrap{
 
 div#logo_wrap>svg{
   position: absolute;
-  top: 180px;
-  right: 130px;
+  top: 260px;
+  left: 85px;
   /* background-color: blue; */
 }
 
 span#logo_airplane{
   position: absolute;
-  top: 180px;
-  right: 270px;
+  top: 260px;
+  left: 150px;
   display: block;
   width: 45px;
   height: 50px;
