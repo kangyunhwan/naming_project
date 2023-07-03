@@ -41,8 +41,8 @@ document.addEventListener('DOMContentLoaded',()=>{
         firstSpan.classList.add('selected')
         secondSpan.classList.add('selected')
         gsap.set(mainMenuWrap,{display:'block'})
-        setTimeout(subMenuAni,350)
-        gsap.to(mainMenuInner,{scale:(8),opacity:1,duration:1,onComplete:()=>{
+        setTimeout(subMenuAni,280)
+        gsap.to(mainMenuInner,{scale:(8),opacity:1,duration:0.7,onComplete:()=>{
           
           gsap.set('body,html',{overflow:'hidden'})
           
@@ -61,7 +61,7 @@ document.addEventListener('DOMContentLoaded',()=>{
       // gsap.to(secondSpan,{width:33,bottom:0,duration:0.3, ease:'power1.out'})
       gsap.set(mainMenu,{opacity:0,left:-50})
       
-      gsap.to(mainMenuInner,{scale:(1),opacity:0,duration:1,onComplete:()=>{
+      gsap.to(mainMenuInner,{scale:(1),opacity:0,duration:0.7,onComplete:()=>{
         gsap.set(mainMenuWrap,{display:'none'})
         gsap.set('body,html',{overflow:'visible'})
         isMenuAni=false;
