@@ -41,7 +41,7 @@ document.addEventListener('DOMContentLoaded',()=>{
         firstSpan.classList.add('selected')
         secondSpan.classList.add('selected')
         gsap.set(mainMenuWrap,{display:'block'})
-        setTimeout(subMenuAni,280)
+        setTimeout(subMenuAni,250)
         gsap.to(mainMenuInner,{scale:(8),opacity:1,duration:0.7,onComplete:()=>{
           
           gsap.set('body,html',{overflow:'hidden'})
