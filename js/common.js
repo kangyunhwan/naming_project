@@ -2,24 +2,27 @@ document.addEventListener('DOMContentLoaded',()=>{
 
   
   const subPageGnb=document.querySelectorAll("#sub_gnb>li")
- 
-  let pathName=window.location.pathname;
-  console.log(pathName)
-  let startLine=pathName.lastIndexOf("/");
-  console.log(startLine)
-  let fileName=pathName.slice(startLine+1);
-  console.log(fileName)
 
-  console.log(subPageGnb[1])
-  if(fileName=='about.html'){
+  let pathName=window.location.pathname;
+
+  let aboutFile=pathName.indexOf('about');
+  let storyFile=pathName.indexOf('story');
+  let contactFile=pathName.indexOf('contact');
+  let portfolioFile=pathName.indexOf('portfolio'); 
+
+  if(aboutFile!=-1){
     subPageGnb[1].classList.add('selected')
-  }else if(fileName=='story.html'){
+  }
+  if(storyFile!=-1){
     subPageGnb[2].classList.add('selected')
-  }else if(fileName=='contact.html'){
+  }
+  if(contactFile!=-1){
     subPageGnb[3].classList.add('selected')
-  }else if(fileName=='portfolio.html'){
+  }
+  if(portfolioFile!=-1){
     subPageGnb[4].classList.add('selected')
   }
+
 
   const checkMenuBtn = document.querySelector('#footer_check_btn')
 

@@ -22,13 +22,14 @@ p#contact_title{
   left:0px;
   top:0px;
   margin-bottom: 150px;
+  text-align:left;
 }
 p#contact_title::before{
   content: '';
   width: 28px;
   height: 46px;
   position:absolute;
-  right:340px;
+  left:150px;
   top:70px;
   background: url(/sub/contact/images/title_deco.png)no-repeat;
 }
