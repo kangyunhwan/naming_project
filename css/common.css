@@ -4,6 +4,9 @@ body{
   width: 100%;
   height: 1000px;
 }
+body::-webkit-scrollbar{
+  display: none;
+}
 div#header_wrap{
   width:100%;
   height:85px;

@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded",()=>{
 
   gsap.to(portfolioList,{top:-endY,scrollTrigger:{
     trigger:portfolioWrap,
-    markers:true,
+    // markers:true,
     start:'top top',
     end:`${endY} top`,
     pin:true,
