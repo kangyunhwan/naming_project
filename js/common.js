@@ -9,15 +9,10 @@ document.addEventListener('DOMContentLoaded',()=>{
   const homeSvg = document.querySelector('#mainmenu_home')
 
 
-  const mainMenuWrap = document.querySelector('#mainmenu_wrap')
-  const mainMenuInner=document.querySelector("#mainmenu_list_box");
 
-  // const mainMenu=document.querySelectorAll("#mainmenu_list>li");
-
-  
+  let mainMenuWidth = mainMenu.offsetWidth
 
   let buttonClickState = false;
-  let checkIndex=0;
 
   gsap.set(mainMenu,{right:-mainMenuWidth,opacity:0,scale:(0,0)})
   gsap.set(mainMenuLi,{left:100, opacity:0})
