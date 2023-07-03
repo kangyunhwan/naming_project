@@ -99,7 +99,8 @@ p#portfolio_sub_text_01{
     text-align:center;
     font: normal 30px "Roboto";
     font-weight: 400;
-    color:black;
+    line-height:56px;
+    color:#333;
 }
 p#portfolio_sub_text_02{
     width:100%;
@@ -107,13 +108,13 @@ p#portfolio_sub_text_02{
     position:absolute;
     top:500px;
     text-align:center;
-    font:normal 30px "Roboto";
+    font:normal 50px "Roboto";
     font-weight: 400;
-    color:black;
+    color:#333;
     /* background-color: blue; */
 }
 span.portfolio_sub_text_green{
-    font:bold 34px "Roboto";
+    font:bold 50px "Roboto";
     color:#88DB75;
 }
 div#portfolio_sub_wrap_02{
@@ -128,38 +129,39 @@ p#portfolio_sub_logo_00{
     width:140px;
     height:130px;
     position:absolute;
-    left:350px;
+    left:370px;
     top:0px;
     font:normal 30px "Roboto";
-    color:black;
+    color:#333;
 }
 p#portfolio_sub_logo_00>img{
     width: 100%;
-    height: auto;
+    display:block;
 }
 p#portfolio_sub_text_03{
     width:350px;
-    height:80px;
+    height:auto;
     position:absolute;
     left:550px;
     top:25px;
     font:normal 30px "Roboto";
-    color:black;
+    line-height:46px;
+    color:#333;
 
 }
 p#portfolio_sub_logo_01{
-    width:140px;
-    height:130px;
+    width:250px;
+    height:80px;
     position:absolute;
-    right:750px;
+    right:710px;
     top:35px;
     font:normal 30px "Roboto";
     text-align:center;
-    color:black;
+    color:#333;
 }
 p#portfolio_sub_logo_01>img{
-    width: 200px;
-    height: 50px;
+    width: 100%;
+    display:block;
 }
 p.portfolio_sub_text_04{
     width:350px;
@@ -168,12 +170,12 @@ p.portfolio_sub_text_04{
     right:320px;
     top:25px;
     font:normal 30px "Roboto";
-    color:black;
+    color:#333;
 }
 div#portfolio_sub_wrap_03{
     width: 100%;
-    height: 800px;
-    padding-top: 100px;
+    height: 500px;
+    padding-top: 120px;
     box-sizing: border-box;
     background-color: #F3F3F3;
     /* position: relative;
@@ -248,24 +250,23 @@ p#portfolio_sub_square_03{
 div#portfolio_sub_wrap_04{
     width: 100%;
     height: 2400px;
+    background:#eee;
     /* background-color: red; */
 }
 
 
-div#portfolio_travle_App_box{
+div#portfolio_sub_wireframe{
     margin: 0 auto;
-    width: 1875px;
-    height: 1085px;
-    background:url(/sub/portfolio/portfolio_sub/images/portfolio_Travel_app.png)center no-repeat;
+    width: 80%;
+    height: 800px;
+    background:url(/sub/portfolio/portfolio_sub/images/portfolio_sub_wireframe.jpg)center no-repeat;
     background-size: cover;
 }
 
-div#portfolio_sub_wrap_04_img{
+div#portfolio_sub_mobile_ui{
     width: 100%;
-    height: 780px;
-    background:url(/sub/portfolio/portfolio_sub/images/portfolio_sub_wrap_04_img.png)center no-repeat;
+    height: 945px;
+    background:url(/sub/portfolio/portfolio_sub/images/portfolio_sub_mobile_ui.jpg)center no-repeat;
     background-size: cover;
-    margin-top: 250px;
+    margin-top: 100px;
 }
-
-
