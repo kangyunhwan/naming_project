@@ -18,10 +18,10 @@ window.addEventListener('load',()=>{
 
   let isCursor=false;
 
+
   topBtn.addEventListener("click",()=>{
-    console.log(window.pageYOffset)
+    scrollTo(0,0)
   })
-  
 
   
 

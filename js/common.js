@@ -10,6 +10,12 @@ document.addEventListener('DOMContentLoaded',()=>{
   let contactFile=pathName.indexOf('contact');
   let portfolioFile=pathName.indexOf('portfolio'); 
 
+  const topBtn=document.querySelector("#top_btn");
+
+  topBtn.addEventListener("click",()=>{
+    scrollTo(0,0)
+  })
+
   if(aboutFile!=-1){
     subPageGnb[1].classList.add('selected')
   }
