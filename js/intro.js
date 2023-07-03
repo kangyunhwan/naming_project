@@ -46,14 +46,14 @@ window.addEventListener('load',()=>{
   gsap.set(logoTitle,{left:-196})
   gsap.set(MenuBtn,{opacity:0})
   
-  gsap.to(box,{left:`45%`,top:`28%`,duration:0.8,delay:0.5,onComplete:()=>{
-    gsap.to(box,{left:`54%`,top:`44%`,duration:0.8,onComplete:()=>{
+  gsap.to(box,{left:`45%`,top:`28%`,duration:0.6,delay:0.5,onComplete:()=>{
+    gsap.to(box,{left:`54%`,top:`44%`,duration:0.6,onComplete:()=>{
       gsap.to(box,{left:`45%`,top:`37%`,onComplete:()=>{
-        gsap.to(box,{scale:12,duration:1.2,onComplete:()=>{
+        gsap.to(box,{scale:12,duration:0.8,onComplete:()=>{
           introWrap.removeChild(box)
           gsap.set(introWrap,{backgroundColor:`#0A013D`})
           gsap.to(logo,{opacity:0,display:'none'})
-          // gsap.set(body,{overflow:'visible'})
+          gsap.set('body,html',{overflow:'visible'})
           /*intro 모션 끝*/
           typingPlay=setInterval(messageTyping,120)
           cursorPlay=setInterval(cursorBlink,500)
