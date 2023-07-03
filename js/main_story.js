@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded",()=>{
   const storyVideoWrap=document.querySelector("#story_video_wrap");
   const storyVideoBox=document.querySelector("#story_video_box");
 
-  
+  gsap.set(storyShapeWrap,{height:window.innerHeight})
   
 
   gsap.set(storyVideoBox,{top:0})

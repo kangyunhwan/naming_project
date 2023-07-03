@@ -1,4 +1,6 @@
-document.addEventListener('DOMContentLoaded',()=>{
+window.addEventListener('load',()=>{
+
+  
   // 윤환
   const body=document.querySelector('body')
   const introWrap=document.querySelector("#intro_wrap");
@@ -29,14 +31,14 @@ document.addEventListener('DOMContentLoaded',()=>{
   const firstSpan = MenuBtn.children[0] // 첫번쨰 span 태그
   const secondSpan = MenuBtn.children[1] // 두번쨰 span 태그
 
-  const copyWrap=document.querySelector("#copy_wrap")
-  const portfolioWrap=document.querySelector("#portfolio_wrap");
-  const storyShapeWrap=document.querySelectorAll('#story_shape_wrap');
+  
+  
+  
 
   gsap.set(introWrap,{height:window.innerHeight})
-  gsap.set(copyWrap,{height:window.innerHeight})
-  gsap.set(portfolioWrap,{height:window.innerHeight})
-  gsap.set(storyShapeWrap,{height:window.innerHeight})
+  
+  
+  
 
 
 
@@ -107,7 +109,7 @@ document.addEventListener('DOMContentLoaded',()=>{
 
   function scrollWindow(){
     let scrollHeight=window.pageYOffset;
-    console.log(scrollHeight)
+    // console.log(scrollHeight)
     if(scrollHeight>=mainHeight-110 && scrollHeight<=8099){
       gsap.set(firstSpan,{backgroundColor:`#22226b`})
       gsap.set(secondSpan,{backgroundColor:`#22226b`})
