@@ -1,0 +1,271 @@
+div#portfolio_sub_wrap_00{
+    width:100%;
+    height:700px;
+    /* padding-top:227px; */
+    margin-top: 250px;
+    box-sizing:border-box;
+    position:relative;
+    left:0px;
+    top:0px;
+    background:url(/sub/portfolio/portfolio_sub/images/portfolio_sub_ResetPET00.png) no-repeat;
+}
+p#portfolio_sub_main_title{
+    width:338px;
+    height:117px;
+    font:bold 100px "Roboto";
+    color:white;
+    position:absolute;
+    left:320px;
+    top:250px;
+    margin-bottom:176px;
+}
+ul#portfolio_sub_sub_text_wrap{
+    width:100%;
+    height:100px;
+}
+li#portfolio_sub_sub_title_list_01{
+    width:350px;
+    height:100px;
+}
+p.portfolio_sub_sub_title_01{
+    width:350px;
+    height:42px;
+    position:absolute;
+    left:320px;
+    bottom:106px;
+    font:bold 30px "Roboto";
+    color:white;
+}
+p.portfolio_sub_sub_text_01{
+    width:350px;
+    height:35px;
+    position:absolute;
+    left:320px;
+    bottom:70px;
+    font:normal 28px "Roboto";
+    color:white;
+}
+p.portfolio_sub_sub_title_02{
+    width:350px;
+    height:42px;
+    position:absolute;
+    left:640px;
+    bottom:106px;
+    font:bold 28px "Roboto";
+    color:white;
+}
+p.portfolio_sub_sub_text_02{
+    width:380px;
+    height:35px;
+    position:absolute;
+    left:640px;
+    bottom:70px;
+    font:normal 28px "Roboto";
+    color:white;
+}
+p.portfolio_sub_sub_title_03{
+    width:350px;
+    height:42px;
+    position:absolute;
+    left:1100px;
+    bottom:106px;
+    font:bold 28px "Roboto";
+    color:white;
+}
+p.portfolio_sub_sub_text_03{
+    width:400px;
+    height:35px;
+    position:absolute;
+    left:1100px;
+    bottom:70px;
+    font:normal 28px "Roboto";
+    color:white;
+}
+
+div#portfolio_sub_wrap_01{
+    width:100%;
+    height:700px;
+    position:relative;
+    left:0px;
+    top:0px;
+    background-color: #F3F3F3;
+}
+p#portfolio_sub_text_01{
+    width: 100%;
+    height:170px;
+    position:absolute;
+    top:180px;
+    left:0px;
+    text-align:center;
+    font: normal 30px "Roboto";
+    font-weight: 400;
+    color:black;
+}
+p#portfolio_sub_text_02{
+    width:100%;
+    height:100px;
+    position:absolute;
+    top:500px;
+    text-align:center;
+    font:normal 30px "Roboto";
+    font-weight: 400;
+    color:black;
+    /* background-color: blue; */
+}
+span.portfolio_sub_text_green{
+    font:bold 34px "Roboto";
+    color:#88DB75;
+}
+div#portfolio_sub_wrap_02{
+    width:100%;
+    height:130px;
+    position:relative;
+    left:0px;
+    top:0px;
+    background-color: #F3F3F3;
+}
+p#portfolio_sub_logo_00{
+    width:140px;
+    height:130px;
+    position:absolute;
+    left:350px;
+    top:0px;
+    font:normal 30px "Roboto";
+    color:black;
+}
+p#portfolio_sub_logo_00>img{
+    width: 100%;
+    height: auto;
+}
+p#portfolio_sub_text_03{
+    width:350px;
+    height:80px;
+    position:absolute;
+    left:550px;
+    top:25px;
+    font:normal 30px "Roboto";
+    color:black;
+
+}
+p#portfolio_sub_logo_01{
+    width:140px;
+    height:130px;
+    position:absolute;
+    right:750px;
+    top:35px;
+    font:normal 30px "Roboto";
+    text-align:center;
+    color:black;
+}
+p#portfolio_sub_logo_01>img{
+    width: 200px;
+    height: 50px;
+}
+p.portfolio_sub_text_04{
+    width:350px;
+    height:80px;
+    position:absolute;
+    right:320px;
+    top:25px;
+    font:normal 30px "Roboto";
+    color:black;
+}
+div#portfolio_sub_wrap_03{
+    width: 100%;
+    height: 800px;
+    padding-top: 100px;
+    box-sizing: border-box;
+    background-color: #F3F3F3;
+    /* position: relative;
+    top: 0;
+    left: 0; */
+}
+
+div#portfolio_sub_square_box{
+    width: 1280px;
+    height: 200px;
+    margin: 0 auto;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+div#portfolio_color_box_01{
+    width:400px;
+    height:200px;
+    /* background:url(/sub/portfolio_sub/images/portfolio_sub_background_green.png) no-repeat; */
+    /* font:normal 26px "Roboto"; */
+    background-color: #88DB75;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+div#portfolio_color_box_02{
+    width:400px;
+    height:200px;
+    /* background:url(/sub/portfolio_sub/images/portfolio_sub_background_sky.png) no-repeat; */
+    /* font:normal 26px "Roboto"; */
+    background-color: #D4EAFF;
+    position: absolute;
+    left: 440px;
+    top: 0;
+
+}
+div#portfolio_color_box_03{
+    width:400px;
+    height:200px;
+    /* background:url(/sub/portfolio_sub/images/portfolio_sub_background_yellow.png) no-repeat; */
+    /* font:normal 26px "Roboto"; */
+    background-color: #F1FF51;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+p#portfolio_sub_square_01{
+    position: absolute;
+    left: 35px;
+    bottom: 35px;
+    font: normal 26px 'Roboto';
+}
+p#portfolio_sub_square_02{
+    position: absolute;
+    left: 35px;
+    bottom: 35px;
+    font: normal 26px 'Roboto';
+}
+p#portfolio_sub_square_03{
+    position: absolute;
+    left: 35px;
+    bottom: 35px;
+    font: normal 26px 'Roboto';
+}
+
+/* 여기까지 규리누나 css 입니다~! */
+
+
+
+/* 나연누나 레이아웃 시작 */
+div#portfolio_sub_wrap_04{
+    width: 100%;
+    height: 2400px;
+    /* background-color: red; */
+}
+
+
+div#portfolio_travle_App_box{
+    margin: 0 auto;
+    width: 1875px;
+    height: 1085px;
+    background:url(/sub/portfolio/portfolio_sub/images/portfolio_Travel_app.png)center no-repeat;
+    background-size: cover;
+}
+
+div#portfolio_sub_wrap_04_img{
+    width: 100%;
+    height: 780px;
+    background:url(/sub/portfolio/portfolio_sub/images/portfolio_sub_wrap_04_img.png)center no-repeat;
+    background-size: cover;
+    margin-top: 250px;
+}
+
+
