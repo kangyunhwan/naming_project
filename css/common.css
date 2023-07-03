@@ -125,7 +125,7 @@ div#mainmenu_list_box{
   width: 500px;
   height: 500px;
   border-radius: 50%;
-  background-color:rgba(30,30,30,1);
+  background-color:#06061d;
   position: absolute;
   top: 0;
   right: 0px;
@@ -172,6 +172,7 @@ ul#mainmenu_list>li>a>svg>path{
 }
 ul#mainmenu_list>li>a:hover{
   color:white;
+  letter-spacing: 10px;
 }
 
 ul#mainmenu_list>li>a::before{
