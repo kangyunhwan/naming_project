@@ -9,6 +9,8 @@ window.addEventListener('load',()=>{
   const messageWrap=document.querySelector('#intro_message')
   const cursor=document.querySelector(".intro_cursor");
 
+  const topBtn=document.querySelector("#top_btn");
+
   let message="첫인상 형성에 걸리는 시간 7초"
   let index=0;
   let typingPlay=null;
@@ -16,7 +18,9 @@ window.addEventListener('load',()=>{
 
   let isCursor=false;
 
-
+  topBtn.addEventListener("click",()=>{
+    console.log(window.pageYOffset)
+  })
   
 
   
@@ -37,14 +41,10 @@ window.addEventListener('load',()=>{
 
   gsap.set(introWrap,{height:window.innerHeight})
   
-  
-  
-
-
-
   gsap.set(logoImg,{opacity:0})
   gsap.set(logoTitle,{left:-196})
   gsap.set(MenuBtn,{opacity:0})
+  
   
   gsap.to(box,{left:`45%`,top:`28%`,duration:0.6,delay:0.5,onComplete:()=>{
     gsap.to(box,{left:`54%`,top:`44%`,duration:0.6,onComplete:()=>{
@@ -95,6 +95,7 @@ window.addEventListener('load',()=>{
       }
     }
   }
+  gsap.set(topBtn,{display:'none',opacity:0})
 
   window.addEventListener('scroll',scrollWindow)
 
@@ -110,6 +111,17 @@ window.addEventListener('load',()=>{
   function scrollWindow(){
     let scrollHeight=window.pageYOffset;
     // console.log(scrollHeight)
+
+    if(scrollHeight>=mainHeight){
+      gsap.set(topBtn,{display:'block'})
+      gsap.to(topBtn,{opacity:1,duration:0.7})
+    }else if(scrollHeight<120){
+      gsap.set(topBtn,{display:'none',opacity:0})
+      
+      
+    }
+
+    
     if(scrollHeight>=mainHeight-110 && scrollHeight<=8099){
       gsap.set(firstSpan,{backgroundColor:`#22226b`})
       gsap.set(secondSpan,{backgroundColor:`#22226b`})
