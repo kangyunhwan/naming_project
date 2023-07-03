@@ -6,8 +6,8 @@ window.addEventListener('load',()=>{
   const storyBox5 = document.querySelector('#story_box5')
   
 
-  gsap.set(airPlane, {top:-200, right:-200}) // 비행기처음위치
-  gsap.to(airPlane, {top:180, right:270, delay:1,duration:2,ease:'power4.out'})
+  gsap.set(airPlane, {top:-100, left: 640}) // 비행기처음위치
+  gsap.to(airPlane, {top:260, left: 280, delay:1,duration:2,ease:'power4.out'})
 
   //비행기 움직임 좌표 근데 쉽지않음.. 
   // 라이브러리도 있긴한데 고민해봐야할듯 방향에 맞춰서 비행기 회전이 어려움
