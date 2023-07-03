@@ -1,1 +1,439 @@
 
+
+div#header_logo>a>svg{
+  margin-right: 9px;
+  /* opacity: 0; */
+}
+div#header_logo svg path{
+  fill:#22226b;
+  transition:1s;
+}
+
+div#header_logo_title{
+  width:196px;
+  height: 35px;
+  overflow: hidden;
+  position: absolute;
+  left: 44px;
+  bottom:0px;
+}
+div#header_logo_title>svg{
+  display: block;
+  position:absolute;
+  left: 0px;
+  bottom:0px;
+}
+
+
+button#header_main_menu{
+  width: 54px;
+  height: 25px;
+  position:fixed;
+  right:85px;
+  top:70px;
+  padding: 0;
+  background: none;
+  border: none;
+  /* opacity: 0; */
+  cursor: pointer;
+  z-index: 100;
+}
+/* button#header_main_menu:hover span.header_short_line{
+  width:65%;
+}
+button#header_main_menu:hover span.header_long_line{
+  width:100%;
+} */
+
+span.header_short_line{
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: block;
+  width: 100%;
+  height: 6px;
+  background-color: #22226B;
+  border-radius: 20px;
+  transition: 0.5s;
+}
+
+span.header_short_line.selected{
+  transform: rotate(135deg);
+  width: 100%;
+}
+
+span.header_long_line{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 65%;
+  height: 6px;
+  background-color: #22226B;
+  border-radius: 20px;
+  transition: 0.5s;
+}
+
+span.header_long_line.selected{
+  transform: rotate(-135deg);
+  width: 100%;
+  bottom: 19px;
+}
+
+
+
+/* 메인메뉴리스트 시작 */
+/* 메뉴리스트 시작 */
+div#mainmenu_wrap{
+  width: 100%;
+  height: 100%;
+  position:fixed;
+  right:0px;
+  top:0px;
+  overflow:hidden;
+  display:none;
+  z-index:99;
+}
+/* div.blur{
+  backdrop-filter: blur(4px);
+} */
+div#mainmenu_list_box{
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  background-color:#06061d;
+  position: absolute;
+  top: 0;
+  right: 0px;
+  opacity:0;
+}
+
+ul#mainmenu_list{
+  width: 30%;
+  height: 100%;
+  font-size: 20px;
+  line-height: 15px;
+  text-align: left;
+  text-indent:250px;
+  /* display:none; */
+  position:absolute;
+  left:0;
+  top:0;
+  padding-top:8%;
+  box-sizing:border-box;
+}
+
+ul#mainmenu_list>li{
+  width: 100%;
+  margin-bottom: 10px;
+  position: relative;
+  top: 0;
+  left: -50px;
+  margin-bottom:50px;
+  opacity:0;
+}
+ul#mainmenu_list>li:last-child{
+  margin-bottom:0;
+}
+
+ul#mainmenu_list>li>a{
+  font: normal 80px 'Roboto';
+  text-decoration: none;
+  color:#C37C3B;
+  transition:0.5s;
+  
+}
+ul#mainmenu_list>li>a>svg>path{
+  transition:0.5s;
+}
+ul#mainmenu_list>li>a:hover{
+  color:white;
+  letter-spacing: 10px;
+}
+
+ul#mainmenu_list>li>a::before{
+  content: "";
+  display: block;
+  width: 0px;
+  height: 1px;
+  
+  line-height: 15px;
+  position: absolute;
+  top:10px;
+  left: 0px;
+  opacity: 0;
+  transition: 0.5s ease-in;
+}
+
+ul#mainmenu_list>li:hover:first-child>a>svg>path{
+  stroke:white;
+}
+
+ul#mainmenu_list>li>a:hover::before{
+  /* display: block; */
+  opacity: 1;
+  width: 250px;
+}
+ul#mainmenu_list>li:last-child>a:hover::before{
+  display: none;
+}
+
+
+
+/* 메인메뉴리스트 끝 */
+
+
+
+
+
+
+
+
+
+
+
+
+
+div#test_section{
+  width: 100%;
+  height: 500px;
+  /* background-color: red; */
+}
+
+
+div#footer_wrap{
+  width: 100%;
+  height: 1200px;
+  /* background-color: blue; */
+}
+
+div#footer_project_wrap{
+  width: 100%;
+  height: 800px;
+  background-color: #BFFFE4;
+}
+div#footer_project{
+  width: 1650px;
+  height: 100%;
+  margin: 0 auto;
+  /* border: 1px solid black; */
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+div#footer_text_box{
+  width: 700px;
+  height: 350px;
+  position: absolute;
+  top: 100px;
+  left: 0;
+  color: #0A013D;
+}
+
+p#footer_title{
+  position: absolute;
+  top: 0;
+  left: 0;
+  font: bold 120px/120px 'Roboto';
+}
+
+p#footer_text{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  font: normal 36px/80px 'Roboto';
+  /* letter-spacing: 1px; */
+}
+
+div#footer_form{
+  position: absolute;
+  top: 100px;
+  right: 0;
+  width: 800px;
+  height: 600px;
+}
+div.footer_input_box{
+  width: 100%;
+  height: 70px;
+  border-bottom: 1px solid #0A013D;
+  box-sizing: border-box;
+  font: normal 30px/70px 'Roboto';
+  float: left;
+}
+div.footer_input_box.long{
+  height: 210px;
+}
+
+div.footer_input_box>input.footer_input{
+  width: 70%;
+  height: 100%;
+  margin-left: 10%;
+  border: 0;
+  box-sizing: border-box;
+  background-color: transparent;
+  font-size: 30px;
+}
+div.footer_input_box>input.footer_input:focus{
+  outline: none;
+}
+
+/* 이건 input type 'number'에 나오는 옆에 화살표 없애주기! */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+div#footer_form>input.footer_input.footer_long{
+  height: 210px;
+  margin-left: none;
+}
+
+div#footer_check_wrap{
+  width: 100%;
+  height: 80px;
+  margin-top: 50px;
+  position: relative;
+  top: 400px;
+  left: 0;
+}
+
+button#footer_check_btn{
+  position: absolute;
+  top: 20px;
+  left: 0px;
+  border: 1px solid black;
+  box-sizing: border-box;
+  width: 35px;
+  height: 35px;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+button#footer_check_btn>i{
+  font-size: 20px;
+}
+
+
+p#footer_check_text{
+  position: absolute;
+  top: 16px;
+  left: 50px;
+  width: auto;
+  height: 35px;
+  font: normal 30px 'Roboto';
+  color: #0A013D;
+}
+
+button#footer_inquiry_btn{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 230px;
+  height: 80px;
+  background-color: #0A013D;
+  border: none;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+button#footer_inquiry_btn>span{
+  font: bold 30px 'Roboto';
+  color: white;
+}
+
+button#footer_inquiry_btn:hover{
+  background-color: #22226B;
+}
+
+
+
+div#footer_info{
+  width: 100%;
+  height: 400px;
+  background-color: #06061D;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+div#sub_footer_logo{
+  width: 220px;
+  height: 33px;
+  position: absolute;
+  top: 70px;
+  left: 50%;
+  margin-left: -110px;
+}
+
+div#sub_footer_logo>img{
+  width: 100%;
+}
+
+div#sub_footer_list_box{
+  width: 800px;
+  height: 30px;
+  /* background-color: red; */
+  position: absolute;
+  top: 140px;
+  left: 50%;
+  margin-left: -400px;
+}
+
+ul#sub_footer_list{
+  width: 100%;
+  height: 100%;
+}
+
+ul#sub_footer_list>li{
+  width: 25%;
+  height: 100%;
+  float: left;
+  text-align: center;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+
+
+ul#sub_footer_list>li::before{
+  display: block;
+  content: "";
+  width: 2px;
+  height: 30px;
+  background-color: #EEEEEE;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+
+
+ul#sub_footer_list>li:last-child::before{
+  display: none;
+}
+
+
+
+ul#sub_footer_list>li>a{
+  font: 25px/30px 'Roboto';
+  font-weight: 600;
+  text-decoration: none;
+  color: #EEEEEE;
+}
+
+
+div#sub_footer_copyright_wrap{
+  width: 1200px;
+  height: 70px;
+  position: absolute;
+  top: 240px;
+  left: 50%;
+  margin-left: -600px;
+}
+
+p.sub_footer_copyright{
+  font: 26px/35px 'Roboto';
+  font-weight: 500;
+  text-align: center;
+  color: #cccccc;
+}
