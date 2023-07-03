@@ -21,10 +21,10 @@ p#portfolio_title{
   color: #0A013D;
   text-transform: uppercase;
   text-align: left;
-  margin-top:260px;
-  /* margin-top:180px; */
+  /* margin-top:260px; */
+  margin-top:180px;
   margin-bottom:200px;
-  margin-left:85px;
+  margin-left:125px;
 }
 
 div#portfolio_silde_wrap{
