@@ -108,16 +108,16 @@ document.addEventListener('DOMContentLoaded',()=>{
   function scrollWindow(){
     let scrollHeight=window.pageYOffset;
     console.log(scrollHeight)
-    if(scrollHeight>=mainHeight-110 && scrollHeight<=7599){
+    if(scrollHeight>=mainHeight-110 && scrollHeight<=8099){
       gsap.set(firstSpan,{backgroundColor:`#22226b`})
       gsap.set(secondSpan,{backgroundColor:`#22226b`})
       gsap.set(logoPath,{fill:`#22226b`})
 
-    }else if(scrollHeight>=7600 && scrollHeight<=9020){
+    }else if(scrollHeight>=8100 && scrollHeight<=9500){
       gsap.set(firstSpan,{backgroundColor:`#fff`})
       gsap.set(secondSpan,{backgroundColor:`#fff`})
       gsap.set(logoPath,{fill:`#fff`})
-    }else if(scrollHeight>=9030){
+    }else if(scrollHeight>=9501){
       gsap.set(firstSpan,{backgroundColor:`#22226b`})
       gsap.set(secondSpan,{backgroundColor:`#22226b`})
       gsap.set(logoPath,{fill:`#22226b`})

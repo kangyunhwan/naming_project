@@ -31,7 +31,7 @@ function activateMainMenu(e){
       setTimeout(subMenuAni,250)
       gsap.to(mainMenuInner,{scale:(8),opacity:1,duration:0.7,onComplete:()=>{
         
-        // gsap.set('body,html',{overflow:'hidden'})
+        gsap.set('body,html',{overflow:'hidden'})
         
       }})
 
@@ -49,7 +49,7 @@ function activateMainMenu(e){
     
     gsap.to(mainMenuInner,{scale:(1),opacity:0,duration:0.7,onComplete:()=>{
       gsap.set(mainMenuWrap,{display:'none'})
-      // gsap.set('body,html',{overflow:'visible'})
+      gsap.set('body,html',{overflow:'visible'})
       isMenuAni=false;
       buttonClickState=false
       checkIndex=0
