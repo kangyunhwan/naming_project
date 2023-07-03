@@ -41,19 +41,14 @@ document.addEventListener('DOMContentLoaded',()=>{
         firstSpan.classList.add('selected')
         secondSpan.classList.add('selected')
         gsap.set(mainMenuWrap,{display:'block'})
+        setTimeout(subMenuAni,350)
         gsap.to(mainMenuInner,{scale:(8),opacity:1,duration:1,onComplete:()=>{
           
           gsap.set('body,html',{overflow:'hidden'})
-          for(i=0;i<mainMenu.length;i++){
-            gsap.to(mainMenu[i],{left:0,opacity:1,delay:0.2*i,onComplete:()=>{
-              checkIndex++;
-              if(checkIndex==mainMenu.length){
-                isMenuAni=false;
-                buttonClickState=true;
-              }
-            }})
-          }
+          
         }})
+
+       
       }
       
     }else if(buttonClickState==true){
@@ -74,6 +69,18 @@ document.addEventListener('DOMContentLoaded',()=>{
         checkIndex=0
       }})
      }
+    }
+  }
+
+  function subMenuAni(){
+    for(i=0;i<mainMenu.length;i++){
+      gsap.to(mainMenu[i],{left:0,opacity:1,delay:0.1*i,onComplete:()=>{
+        checkIndex++;
+        if(checkIndex==mainMenu.length){
+          isMenuAni=false;
+          buttonClickState=true;
+        }
+      }})
     }
   }
 

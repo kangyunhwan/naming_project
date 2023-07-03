@@ -53,7 +53,7 @@ document.addEventListener('DOMContentLoaded',()=>{
           gsap.to(logo,{opacity:0,display:'none'})
           // gsap.set(body,{overflow:'visible'})
           /*intro 모션 끝*/
-          typingPlay=setInterval(messageTyping,200)
+          typingPlay=setInterval(messageTyping,120)
           cursorPlay=setInterval(cursorBlink,500)
           gsap.to(logoImg,{opacity:1, duration:0.5, ease:"power1.out", onComplete:()=>{
             gsap.to(logoTitle,{left:0, duration:1, ease:"power1.out"})
