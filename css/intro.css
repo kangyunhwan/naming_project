@@ -1,11 +1,9 @@
 body{
   background:white;
-  /* overflow:hidden; */
+  /* overflow:hiddeen; */
 
 }
-body::-webkit-scrollbar{
-  display: none;
-}
+
 div#intro_wrap{
   width:100%;
   height: 1000px;
