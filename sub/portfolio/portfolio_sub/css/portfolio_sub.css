@@ -278,3 +278,53 @@ div#portfolio_sub_mockup{
     background:url(/sub/portfolio/portfolio_sub/images/portfolio_sub_mockup.jpg)center no-repeat;
     background-size:cover;
 }
+
+div#portfolio_category_wrap{
+    width:85%;
+    height:744px;/*auto 744px*/
+    margin:200px auto 200px;
+  }
+  
+  ul#portfolio_category_title_list{
+    width:500px;
+    height: 30px;
+    margin-bottom: 80px;
+  }
+  ul#portfolio_category_title_list>li{
+    width:130px;
+    height: 28px;
+    border-right: solid 2px #0A013D;
+    margin-right: 50px;
+    float: left;
+    cursor: pointer;
+    font: normal 30px/30px "Roboto";
+    font-weight: 700;
+    color: #666666;
+    text-transform: uppercase;
+  }
+  ul#portfolio_category_title_list>li:last-child{
+    border-right: none;
+    margin-right: 0px;
+  }
+  
+  ul#portfolio_category_title_list>li.selected{
+    color: #0A013D;
+  }
+  
+  ul#portfolio_category_thumbnail_list{
+    width:100%;
+    height: 634px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-auto-rows: repeat(2, 1fr);
+    grid-gap: 20px;
+  }
+  ul#portfolio_category_thumbnail_list>li{
+    background: rgb(180, 215, 255);
+  }
+  ul#portfolio_category_thumbnail_list>li>a>img{
+    display:block;
+    width:100%;
+    height:100%;
+  }
+  
