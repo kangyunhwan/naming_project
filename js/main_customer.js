@@ -89,8 +89,8 @@ document.addEventListener("DOMContentLoaded",()=>{
       customerLi[currentIndex].classList.remove('selected')
       customerLi[nextIndex].classList.add('selected')
 
-      customerLi[currentIndex].children[0].children[0].src=`/image/customer_company_logo${currentIndex}_gray.jpg`
-      customerLi[nextIndex].children[0].children[0].src=`/image/customer_company_logo${nextIndex}_color.jpg`
+      customerLi[currentIndex].children[0].children[0].src=`/naming_project/image/customer_company_logo${currentIndex}_gray.jpg`
+      customerLi[nextIndex].children[0].children[0].src=`/naming_project/image/customer_company_logo${nextIndex}_color.jpg`
 
 
       currentIndex=nextIndex;
@@ -116,8 +116,8 @@ document.addEventListener("DOMContentLoaded",()=>{
       customerLi[currentIndex].classList.remove('selected')
       customerLi[nextIndex].classList.add('selected')
 
-      customerLi[currentIndex].children[0].children[0].src=`/image/customer_company_logo${currentIndex}_gray.jpg`
-      customerLi[nextIndex].children[0].children[0].src=`/image/customer_company_logo${nextIndex}_color.jpg`
+      customerLi[currentIndex].children[0].children[0].src=`/naming_project/image/customer_company_logo${currentIndex}_gray.jpg`
+      customerLi[nextIndex].children[0].children[0].src=`/naming_project/image/customer_company_logo${nextIndex}_color.jpg`
 
       currentIndex=nextIndex;
   
