@@ -9,15 +9,15 @@ div#logo_wrap{
 
 div#logo_wrap>svg{
   position: absolute;
-  top: 180px;
-  right: 130px;
+  top: 270px;
+  left: 100px;
   /* background-color: blue; */
 }
 
 span#logo_airplane{
   position: absolute;
-  top: 180px;
-  right: 270px;
+  top: 270px;
+  left: 340px;
   display: block;
   width: 45px;
   height: 50px;
@@ -104,8 +104,8 @@ ul.story_list>li{
 }
 
 .story_img_box{
-  width: 520px;
-  height: 520px;
+  width: 500px;
+  height: 500px;
   /* background-color: blue; */
   margin: 0 auto;
   position: relative;
@@ -122,8 +122,8 @@ ul.story_list>li{
   width: 80px;
   height: 20px;
   position: absolute;
-  top: 10px;
-  right: 10px;
+  top: 20px;
+  right: 20px;
   background:url(/sub/story/images/story_icon.png) no-repeat;
   z-index: 10;
 }
@@ -157,12 +157,13 @@ img에 마우스 오버했을 때 스케일을 키움
   position: relative;
   top: 0;
   left: 0;
-  font: 22px/25px 'Roboto';
-  font-weight: 400;
+  font: 22px/25px 'Noto Sans KR';
+  font-weight: 500;
   color: #222222;
 }
 
 .story_list_info_date{
+  font: 24px/25px 'Pacifico';
   position: absolute;
   left: 10px;
   top: 0;

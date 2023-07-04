@@ -2,7 +2,7 @@ div#portfolio_sub_wrap_00{
     width:100%;
     height:700px;
     /* padding-top:227px; */
-    margin-top: 250px;
+    margin-top: 300px;
     box-sizing:border-box;
     position:relative;
     left:0px;
@@ -28,16 +28,16 @@ li#portfolio_sub_sub_title_list_01{
     height:100px;
 }
 p.portfolio_sub_sub_title_01{
-    width:350px;
+    width:300px;
     height:42px;
     position:absolute;
     left:320px;
-    bottom:106px;
+    bottom:110px;
     font:bold 30px "Roboto";
     color:white;
 }
 p.portfolio_sub_sub_text_01{
-    width:350px;
+    width:300px;
     height:35px;
     position:absolute;
     left:320px;
@@ -50,7 +50,7 @@ p.portfolio_sub_sub_title_02{
     height:42px;
     position:absolute;
     left:640px;
-    bottom:106px;
+    bottom:110px;
     font:bold 28px "Roboto";
     color:white;
 }
@@ -68,7 +68,7 @@ p.portfolio_sub_sub_title_03{
     height:42px;
     position:absolute;
     left:1100px;
-    bottom:106px;
+    bottom:110px;
     font:bold 28px "Roboto";
     color:white;
 }
@@ -97,9 +97,9 @@ p#portfolio_sub_text_01{
     top:180px;
     left:0px;
     text-align:center;
-    font: normal 30px "Roboto";
+    font: normal 30px/50px "Roboto";
     font-weight: 400;
-    color:black;
+    color:#333;
 }
 p#portfolio_sub_text_02{
     width:100%;
@@ -107,13 +107,13 @@ p#portfolio_sub_text_02{
     position:absolute;
     top:500px;
     text-align:center;
-    font:normal 30px "Roboto";
+    font:normal 50px "Roboto";
     font-weight: 400;
-    color:black;
+    color:#333;
     /* background-color: blue; */
 }
 span.portfolio_sub_text_green{
-    font:bold 34px "Roboto";
+    font:bold 50px "Roboto";
     color:#88DB75;
 }
 div#portfolio_sub_wrap_02{
@@ -128,38 +128,38 @@ p#portfolio_sub_logo_00{
     width:140px;
     height:130px;
     position:absolute;
-    left:350px;
+    left:370px;
     top:0px;
     font:normal 30px "Roboto";
-    color:black;
+    color:#333;
 }
 p#portfolio_sub_logo_00>img{
     width: 100%;
-    height: auto;
+    display:block;
 }
 p#portfolio_sub_text_03{
     width:350px;
-    height:80px;
+    height:auto;
     position:absolute;
     left:550px;
     top:25px;
-    font:normal 30px "Roboto";
-    color:black;
+    font:normal 26px/40px "Roboto";
+    color:#333;
 
 }
 p#portfolio_sub_logo_01{
-    width:140px;
-    height:130px;
+    width:250px;
+    height:80px;
     position:absolute;
-    right:750px;
+    right:710px;
     top:35px;
     font:normal 30px "Roboto";
     text-align:center;
-    color:black;
+    color:#333;
 }
 p#portfolio_sub_logo_01>img{
-    width: 200px;
-    height: 50px;
+    width: 100%;
+    display:block;
 }
 p.portfolio_sub_text_04{
     width:350px;
@@ -167,13 +167,13 @@ p.portfolio_sub_text_04{
     position:absolute;
     right:320px;
     top:25px;
-    font:normal 30px "Roboto";
-    color:black;
+    font:normal 26px/40px "Roboto";
+    color:#333;
 }
 div#portfolio_sub_wrap_03{
     width: 100%;
-    height: 800px;
-    padding-top: 100px;
+    height: 500px;
+    padding-top: 120px;
     box-sizing: border-box;
     background-color: #F3F3F3;
     /* position: relative;
@@ -223,21 +223,24 @@ div#portfolio_color_box_03{
 
 p#portfolio_sub_square_01{
     position: absolute;
-    left: 35px;
-    bottom: 35px;
-    font: normal 26px 'Roboto';
+    left: 30px;
+    bottom: 30px;
+    font: normal 26px/40px 'Roboto';
+    color:#333;
 }
 p#portfolio_sub_square_02{
     position: absolute;
-    left: 35px;
-    bottom: 35px;
-    font: normal 26px 'Roboto';
+    left: 30px;
+    bottom: 30px;
+    font: normal 26px/40px 'Roboto';
+    color:#333;
 }
 p#portfolio_sub_square_03{
     position: absolute;
-    left: 35px;
-    bottom: 35px;
-    font: normal 26px 'Roboto';
+    left: 30px;
+    bottom: 30px;
+    font: normal 26px/40px 'Roboto';
+    color:#333;
 }
 
 /* 여기까지 규리누나 css 입니다~! */
@@ -247,25 +250,81 @@ p#portfolio_sub_square_03{
 /* 나연누나 레이아웃 시작 */
 div#portfolio_sub_wrap_04{
     width: 100%;
-    height: 2400px;
+    height: auto;
+    background:#eee;
     /* background-color: red; */
 }
 
 
-div#portfolio_travle_App_box{
+div#portfolio_sub_wireframe{
     margin: 0 auto;
-    width: 1875px;
-    height: 1085px;
-    background:url(/sub/portfolio/portfolio_sub/images/portfolio_Travel_app.png)center no-repeat;
+    width: 80%;
+    height: 800px;
+    background:url(/sub/portfolio/portfolio_sub/images/portfolio_sub_wireframe.jpg)center no-repeat;
     background-size: cover;
 }
 
-div#portfolio_sub_wrap_04_img{
+div#portfolio_sub_mobile_ui{
     width: 100%;
-    height: 780px;
-    background:url(/sub/portfolio/portfolio_sub/images/portfolio_sub_wrap_04_img.png)center no-repeat;
+    height: 945px;
+    background:url(/sub/portfolio/portfolio_sub/images/portfolio_sub_mobile_ui.jpg)center no-repeat;
     background-size: cover;
-    margin-top: 250px;
+    margin-top: 100px;
 }
 
+div#portfolio_sub_mockup{
+    width:100%;
+    height:945px;
+    background:url(/sub/portfolio/portfolio_sub/images/portfolio_sub_mockup.jpg)center no-repeat;
+    background-size:cover;
+}
 
+div#portfolio_category_wrap{
+    width:85%;
+    height:744px;/*auto 744px*/
+    margin:200px auto 200px;
+  }
+  
+  ul#portfolio_category_title_list{
+    width:500px;
+    height: 30px;
+    margin-bottom: 80px;
+  }
+  ul#portfolio_category_title_list>li{
+    width:130px;
+    height: 28px;
+    border-right: solid 2px #0A013D;
+    margin-right: 50px;
+    float: left;
+    cursor: pointer;
+    font: normal 30px/30px "Roboto";
+    font-weight: 700;
+    color: #666666;
+    text-transform: uppercase;
+  }
+  ul#portfolio_category_title_list>li:last-child{
+    border-right: none;
+    margin-right: 0px;
+  }
+  
+  ul#portfolio_category_title_list>li.selected{
+    color: #0A013D;
+  }
+  
+  ul#portfolio_category_thumbnail_list{
+    width:100%;
+    height: 634px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-auto-rows: repeat(2, 1fr);
+    grid-gap: 20px;
+  }
+  ul#portfolio_category_thumbnail_list>li{
+    background: rgb(180, 215, 255);
+  }
+  ul#portfolio_category_thumbnail_list>li>a>img{
+    display:block;
+    width:100%;
+    height:100%;
+  }
+  

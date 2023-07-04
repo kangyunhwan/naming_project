@@ -1,4 +1,6 @@
-document.addEventListener('DOMContentLoaded',()=>{
+window.addEventListener('load',()=>{
+
+  
   // 윤환
   const body=document.querySelector('body')
   const introWrap=document.querySelector("#intro_wrap");
@@ -6,6 +8,8 @@ document.addEventListener('DOMContentLoaded',()=>{
   const logo=document.querySelector("#intro_logo");
   const messageWrap=document.querySelector('#intro_message')
   const cursor=document.querySelector(".intro_cursor");
+
+  const topBtn=document.querySelector("#top_btn");
 
   let message="첫인상 형성에 걸리는 시간 7초"
   let index=0;
@@ -15,7 +19,9 @@ document.addEventListener('DOMContentLoaded',()=>{
   let isCursor=false;
 
 
-  
+  topBtn.addEventListener("click",()=>{
+    scrollTo({top:0,behavior:'smooth'})
+  })
 
   
 
@@ -29,31 +35,27 @@ document.addEventListener('DOMContentLoaded',()=>{
   const firstSpan = MenuBtn.children[0] // 첫번쨰 span 태그
   const secondSpan = MenuBtn.children[1] // 두번쨰 span 태그
 
-  const copyWrap=document.querySelector("#copy_wrap")
-  const portfolioWrap=document.querySelector("#portfolio_wrap");
-  const storyShapeWrap=document.querySelectorAll('#story_shape_wrap');
+  
+  
+  
 
   gsap.set(introWrap,{height:window.innerHeight})
-  gsap.set(copyWrap,{height:window.innerHeight})
-  gsap.set(portfolioWrap,{height:window.innerHeight})
-  gsap.set(storyShapeWrap,{height:window.innerHeight})
-
-
-
+  
   gsap.set(logoImg,{opacity:0})
   gsap.set(logoTitle,{left:-196})
   gsap.set(MenuBtn,{opacity:0})
   
-  gsap.to(box,{left:`45%`,top:`28%`,duration:0.8,delay:0.5,onComplete:()=>{
-    gsap.to(box,{left:`54%`,top:`44%`,duration:0.8,onComplete:()=>{
+  
+  gsap.to(box,{left:`45%`,top:`28%`,duration:0.6,delay:0.5,onComplete:()=>{
+    gsap.to(box,{left:`54%`,top:`44%`,duration:0.6,onComplete:()=>{
       gsap.to(box,{left:`45%`,top:`37%`,onComplete:()=>{
-        gsap.to(box,{scale:12,duration:1.2,onComplete:()=>{
+        gsap.to(box,{scale:12,duration:0.8,onComplete:()=>{
           introWrap.removeChild(box)
           gsap.set(introWrap,{backgroundColor:`#0A013D`})
           gsap.to(logo,{opacity:0,display:'none'})
-          // gsap.set(body,{overflow:'visible'})
+          gsap.set('body,html',{overflow:'visible'})
           /*intro 모션 끝*/
-          typingPlay=setInterval(messageTyping,200)
+          typingPlay=setInterval(messageTyping,120)
           cursorPlay=setInterval(cursorBlink,500)
           gsap.to(logoImg,{opacity:1, duration:0.5, ease:"power1.out", onComplete:()=>{
             gsap.to(logoTitle,{left:0, duration:1, ease:"power1.out"})
@@ -93,6 +95,7 @@ document.addEventListener('DOMContentLoaded',()=>{
       }
     }
   }
+  gsap.set(topBtn,{display:'none',opacity:0})
 
   window.addEventListener('scroll',scrollWindow)
 
@@ -107,17 +110,28 @@ document.addEventListener('DOMContentLoaded',()=>{
 
   function scrollWindow(){
     let scrollHeight=window.pageYOffset;
-    console.log(scrollHeight)
-    if(scrollHeight>=mainHeight-110 && scrollHeight<=7599){
+    // console.log(scrollHeight)
+
+    if(scrollHeight>=mainHeight){
+      gsap.set(topBtn,{display:'block'})
+      gsap.to(topBtn,{opacity:1,duration:0.7})
+    }else if(scrollHeight<120){
+      gsap.set(topBtn,{display:'none',opacity:0})
+      
+      
+    }
+
+    
+    if(scrollHeight>=mainHeight-110 && scrollHeight<=8099){
       gsap.set(firstSpan,{backgroundColor:`#22226b`})
       gsap.set(secondSpan,{backgroundColor:`#22226b`})
       gsap.set(logoPath,{fill:`#22226b`})
 
-    }else if(scrollHeight>=7600 && scrollHeight<=9020){
+    }else if(scrollHeight>=8100 && scrollHeight<=9500){
       gsap.set(firstSpan,{backgroundColor:`#fff`})
       gsap.set(secondSpan,{backgroundColor:`#fff`})
       gsap.set(logoPath,{fill:`#fff`})
-    }else if(scrollHeight>=9030){
+    }else if(scrollHeight>=9501){
       gsap.set(firstSpan,{backgroundColor:`#22226b`})
       gsap.set(secondSpan,{backgroundColor:`#22226b`})
       gsap.set(logoPath,{fill:`#22226b`})

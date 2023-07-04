@@ -27,6 +27,12 @@
 
 </head>
 <body>
+
+  <div id="top_btn">
+    <p><img src="/image/main_topbtn_arrow.svg" alt=""></p>
+    <p>TOP</p>
+    
+  </div>
     <!-- 헤더부분 시작 -->
 
 
@@ -51,33 +57,17 @@
       </a>
     </div>
 
-    <button id="header_main_menu">
-      <span class="header_short_line"></span>
-      <span class="header_long_line"></span>
-    </button>
-  <!-- 헤더부분 끝 -->
+
 
 <!-- 메뉴부분 -->
-<div id="mainmenu_wrap" >
-  <div id="mainmenu_list_box" class="blur">
-    
-  </div>
-  <ul id="mainmenu_list">
-    <li>
-      <a href="/index.html">
-        <svg width="88" height="72" viewBox="0 0 88 72" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M4 45L44 5L84 45" stroke="#C37C3B" stroke-width="7" stroke-linecap="round"/>
-          <path d="M18.2104 31.8423V68.1581H67.6841V31.8423" stroke="#C37C3B" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
-          </svg>
-          
-      </a>
-    </li>
-    <li><a href="/sub/story/story.html">STORY</a></li>
-    <li><a href="/sub/about/about.html">ABOUT</a></li>
-    <li><a href="/sub/contact/contact.html">CONTACT</a></li>
-    <li><a href="/sub/portfolio/portfolio.html">PORTFOLIO</a></li>
-  </ul>
-</div>
+
+<ul id="sub_gnb">
+  <li><a href="/index.html">HOME</a></li>
+  <li><a href="/sub/about/about.html">ABOUT</a></li>
+  <li><a href="/sub/story/story.html">STORY</a></li>
+  <li><a href="/sub/contact/contact.html">CONTACT</a></li>
+  <li><a href="/sub/portfolio/portfolio.html">PORTFOLIO</a></li>
+</ul>
 <!-- 메뉴부분 -->
 
 
@@ -101,10 +91,10 @@
       <div class="about_identity_wrap">
         <p class="about_identity">IDENTITY</p>
         <ul class="about_text_list">
-          <li><span>SIMPLE ;</span> 간단하게 만들어라</li>
-          <li><span>REMEMBER ;</span> 기억하게 만들어라</li>
-          <li><span>FUN ;</span> 재미있게 만들어라</li>
-          <li><span>ATTENTION ;</span> 시선끌게 만들어라</li>
+          <li><span>SIMPLE ;</span> &nbsp;간단하게 만들어라</li>
+          <li><span>REMEMBER ;</span> &nbsp;기억하게 만들어라</li>
+          <li><span>FUN ;</span> &nbsp;재미있게 만들어라</li>
+          <li><span>ATTENTION ;</span> &nbsp;시선끌게 만들어라</li>
           
         </ul>
       </div>
@@ -112,7 +102,7 @@
     </div>
 
     <div id="about_main_visual">
-      <img src="/sub/about/images/about_main_visual.jpg">
+      <!-- <img src="/sub/about/images/about_main_visual.jpg"> -->
     </div>
 
     <div id="about_info_wrap">
@@ -153,7 +143,7 @@
     </div>
 
     <div id="about_sub_visual">
-      <img src="/sub/about/images/about_sub_visual.jpg">
+      <!-- <img src="/sub/about/images/about_sub_visual.jpg"> -->
     </div>
 
     <ul id="about_team_list">
@@ -237,9 +227,9 @@
               연락처
               <input type="number" class="footer_input" maxlength="15">
             </div>
-            <div class="footer_input_box long">
-              문의내용
-              <input type="textarea" class="footer_input footer_long" maxlength="200">
+            <div class="footer_input_long_box">
+              <span>문의내용</span>
+              <textarea name="footer_text_area" id="footer_textarea" cols="40" rows="20"></textarea>
             </div>
   
            
@@ -267,7 +257,8 @@
       </div>
       <div id="footer_info">
         <div id="sub_footer_logo">
-          <img src="/image/sub_footer_logo.png" alt="서브로고이미지">
+          <a href="/index.html"><img src="/image/sub_footer_logo.png" alt="서브로고이미지"></a>
+          
         </div>
         <div id="sub_footer_list_box">
           <ul id="sub_footer_list">

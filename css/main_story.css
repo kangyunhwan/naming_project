@@ -48,12 +48,12 @@ span.story_shape3{
 span.story_shape4{
   left:124px;
   top:536px;
-  animation:story_shape_ani4 2s infinite;
+  animation:story_shape_ani4 2.5s infinite;
 }
 span.story_shape5{
   left:1035px;
   top:587px;
-  animation:story_shape_ani5 1.7s infinite;
+  animation:story_shape_ani5 1.2s infinite;
 }
 span.story_shape6{
   left:1438px;
@@ -75,15 +75,18 @@ div#story_video_wrap{
 div#story_video_box{
   width: 1460px;
   height: 800px;
-  background-color: skyblue;
+  /* background-color: skyblue; */
   margin: 0 auto;
   position:relative;
   left:0;
   top:-200px;
-  transform: rotate(-2deg);
-  /* 비디오박스돌려놓기 */
 }
 video#story_video_size{
+  width: 100%;
+  height: 100%;
+}
+
+video#story_video_size>embed{
   width: 100%;
   height: 100%;
 }
@@ -130,7 +133,8 @@ div.activate svg path{
     top:90px;
   }
   50%{
-    top:75px;
+    /* top:75px; */
+    top: 50px;
   }
   100%{
     top:90px;
@@ -142,7 +146,8 @@ div.activate svg path{
     top:176px;
   }
   50%{
-    top:151px;
+    /* top:151px; */
+    top:116px;
   }
   100%{
     top:176px;
@@ -154,7 +159,8 @@ div.activate svg path{
     top:265px;
   }
   50%{
-    top:240px;
+    /* top:240px; */
+    top:205px;
   }
   100%{
     top:265px;
@@ -166,7 +172,8 @@ div.activate svg path{
     top:536px;
   }
   50%{
-    top:510px;
+    /* top:510px; */
+    top:476px;
   }
   100%{
     top:536px;
@@ -178,7 +185,8 @@ div.activate svg path{
     
   }
   50%{
-    top:560px;
+    /* top:560px; */
+    top:527px;
     
   }
   100%{
@@ -191,7 +199,8 @@ div.activate svg path{
     top:473px;
   }
   50%{
-    top:440px;
+    /* top:440px; */
+    top:433px;
   }
   100%{
     top:473px;
@@ -202,7 +211,8 @@ div.activate svg path{
     top:466px;
   }
   50%{
-    top:420px;
+    /* top:420px; */
+    top:400px;
   }
   100%{
     top:466px;

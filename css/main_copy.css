@@ -43,7 +43,7 @@ div#copy_wrap div.copy_title path{
   stroke-dashoffset:1200;
 }
 div#copy_wrap div.activate path{
-  animation: stroke 1.5s 1s linear;
+  animation: stroke 1s 1s linear;
   animation-fill-mode: forwards
 }
 
@@ -66,7 +66,7 @@ div#copy_wrap p.copy_arrow path{
   
 }
 div#copy_wrap p.arrow_activate path{
-  animation:copy_arrow_ani 2s 1.5s forwards;
+  animation:copy_arrow_ani 1s 1.2s forwards;
 }
 
 

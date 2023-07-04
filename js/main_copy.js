@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded",()=>{
   const copyArrow=document.querySelector(".copy_arrow")
 
   
-
+  gsap.set(copyWrap,{height:window.innerHeight})
 
   gsap.to(copyHi,{opacity:1,left:200,duration:1,scrollTrigger:{
     trigger:copyHi,

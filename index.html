@@ -34,22 +34,35 @@
   <link rel="stylesheet" href="/css/main_customer.css">
   <link rel="stylesheet" href="/css/main_footer.css">
 
-  
+  <script>
+    window.addEventListener('load',()=>{
+      setTimeout(()=>{
+        scrollTo(0,0)
+      },20)
+      
+    })
+  </script>
   <script src="/js/intro.js"></script>
-  <script src="/js/common.js"></script>
+  <script src="/js/nav.js"></script>
+  <!-- <script src="/js/common.js"></script> -->
   <script src="/js/main_copy.js"></script>
   <script src="/js/main_portfolio.js"></script>
   <script src="/js/main_story.js"></script>
   <script src="/js/main_customer.js"></script>
   <script src="/js/main_footer.js"></script>
-  <script>
 
-  </script>
-  <!-- <script src="/js/section5.js"></script> -->
+  
 
 </head>
 <body> 
-  <!-- 인트로 페이지 시작-->
+
+  <div id="top_btn">
+    <p><img src="/image/main_topbtn_arrow.svg" alt=""></p>
+    <p>TOP</p>
+    
+  </div>
+
+  <!-- 인트로 페이지 시작.-->
   <div id="intro_wrap">
     <div id="intro_logo">
       <svg width="400" height="60" viewBox="0 0 400 60" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -118,7 +131,7 @@
     </div>
     <ul id="mainmenu_list">
       <li>
-        <a href="#">
+        <a href="index.html">
           <svg width="88" height="72" viewBox="0 0 88 72" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M4 45L44 5L84 45" stroke="#C37C3B" stroke-width="7" stroke-linecap="round"/>
             <path d="M18.2104 31.8423V68.1581H67.6841V31.8423" stroke="#C37C3B" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
@@ -126,8 +139,8 @@
             
         </a>
       </li>
-      <li><a href="/sub/story/story.html">STORY</a></li>
       <li><a href="/sub/about/about.html">ABOUT</a></li>
+      <li><a href="/sub/story/story.html">STORY</a></li>
       <li><a href="/sub/contact/contact.html">CONTACT</a></li>
       <li><a href="/sub/portfolio/portfolio.html">PORTFOLIO</a></li>
     </ul>
@@ -183,7 +196,7 @@
             
             <div class="portfolio_text_wrap">
               <p class="portfolio_num">01</p>
-              <p class="portfolio_title">FRAGRANCE</p>
+              <p class="portfolio_title">RESTPET</p>
             </div>
             
           </a>
@@ -196,7 +209,7 @@
             
             <div class="portfolio_text_wrap">
               <p class="portfolio_num">02</p>
-              <p class="portfolio_title">FRAGRANCE</p>
+              <p class="portfolio_title">USMARTHOME</p>
             </div>
           </a>
         </li>
@@ -220,7 +233,7 @@
             
             <div class="portfolio_text_wrap">
               <p class="portfolio_num">04</p>
-              <p class="portfolio_title">FRAGRANCE</p>
+              <p class="portfolio_title">GREEN SHOP</p>
             </div>
           </a>
         </li>
@@ -232,7 +245,7 @@
             
             <div class="portfolio_text_wrap">
               <p class="portfolio_num">05</p>
-              <p class="portfolio_title">FRAGRANCE</p>
+              <p class="portfolio_title">JOIN FOOTBALL</p>
             </div>
           </a>
         </li>
@@ -278,9 +291,8 @@
 
     <div id="story_video_wrap">
       <div id="story_video_box">
-
         <video id="story_video_size" loop autoplay muted playsinline>
-          <source src="/image/testvideo.mp4">
+          <source src="/image/naming_video_update.mp4">
         </video>
 
         <div class="story_smile">

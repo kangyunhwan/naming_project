@@ -17,14 +17,14 @@ div#portfolio_title_wrap{
 }
 p#portfolio_title{
   font: normal 160px "Roboto";
-  font-weight: 500;
+  font-weight: 600;
   color: #0A013D;
   text-transform: uppercase;
   text-align: left;
-  /* margin-top:260px; */
-  margin-top:180px;
+  margin-top:250px;
+  /* margin-top:180px; */
   margin-bottom:200px;
-  margin-left:125px;
+  margin-left:85px;
 }
 
 div#portfolio_silde_wrap{
@@ -57,28 +57,29 @@ li.portfolio_img_size>a>img{
 }
 ul#portfolio_silde_btn_list{
   width:20px;
-  height: 130px; /*(15+8*4)+15*/
+  height: 110px;
   position: absolute;
   right:85px;
   top:50%;
-  /* margin-top: -65px; */
+  margin-top: -50px;
 }
 
 ul#portfolio_silde_btn_list>li{
-  width:15px;
-  height: 15px;
-  border: solid 2px #0A013D;
+  width:10px;
+  height: 10px;
+  border: solid 1px #777;
   border-radius: 10px;
-  margin-bottom: 8px;
+  margin-bottom: 10px;
 }
 ul#portfolio_silde_btn_list>li:last-child{
   margin-bottom: 0px;
 }
 ul#portfolio_silde_btn_list>li.selected{
-  width:20px;
-  height: 20px;
-  border:none;
-  background: #0A013D;
+  width:13px;
+  height:13px;
+  border: solid 2px #22226b;
+  background: #22226b;
+  box-sizing: border-box;
 }
 
 div#portfolio_category_wrap{

@@ -1,6 +1,6 @@
 body,html{
   width:100%;
-  height:100%;
+  height:auto;
 }
 div#header_logo svg path{
   fill:#22226b;
@@ -20,12 +20,14 @@ div#about_wrap{
   width:100%;
   height:auto;
   overflow:hidden;
-  padding-top:227px;
+  /* padding-top:220px; */
+  
   box-sizing:border-box;
 }
 div#about_title_wrap{
   width:100%;
   height:auto;
+  margin-top:250px;
   margin-bottom:183px;
   position:relative;
   left:0;
@@ -34,10 +36,11 @@ div#about_title_wrap{
 }
 
 h2#about_title{
-  font:bold 160px "Roboto";
+  font:normal 160px "Roboto";
+  font-weight: 600;
   color:#0a013d;
-  text-align:right;
-  margin-right:136px;
+  text-align:left;
+  margin-left:85px;
 }
 
 div.about_attention_wrap{
@@ -71,8 +74,8 @@ p.about_attention_title span{
   top:5px;
 }
 p.about_attention_text{
-  font:normal 40px "Roboto";
-  color:#acacac;
+  font:normal 36px/52px "Roboto";
+  color:#777;
   margin-top:20px;
   position:relative;
   left:0;
@@ -109,8 +112,8 @@ ul.about_text_list{
   top:0;
 }
 ul.about_text_list li{
-  font:bold 40px "Roboto";
-  color:#888888;
+  font:normal 36px "Roboto";
+  color:#777;
   margin-top:35px;
 }
 ul.about_text_list li:first-child{
@@ -119,13 +122,16 @@ ul.about_text_list li:first-child{
 
 ul.about_text_list li span{
   color:#0a013d;
+  font:bold 40px "Roboto";
 }
 
 
 
 div#about_main_visual{
   width:100%;
-  height:auto;
+  height:580px;
+  background:url(/sub/about/images/about_main_visual.jpg) no-repeat center center;
+  /* background-attachment:fixed; */
   overflow:hidden;
 }
 
@@ -140,8 +146,8 @@ p.about_info_title{
 }
 p.about_info_text{
   margin-top:35px;
-  font:normal 32px "Roboto";
-  color:#888888;
+  font:normal 30px/46px "Roboto";
+  color:#777;
 }
 p.about_info_text span{
   display:block;
@@ -155,7 +161,7 @@ p.about_line{
 }
 p.about_line span{
   display:block;
-  width:2px;
+  width:1px;
   height:100%;
   margin:0 auto;
   background:#0a013d;
@@ -174,21 +180,21 @@ p.about_info_subtilte{
 }
 
 p.about_info_subtitle2{
-  margin-top:33px;
-  font:normal 32px "Roboto";
+  margin-top:50px;
+  font:normal 30px/46px "Roboto";
   font-weight:500;
   color:#0a013d;
 }
 
 p.about_info_subtext{
   margin-top:53px;
-  font:normal 30px "Roboto";
-  color:#888888;
+  font:normal 30px/46px "Roboto";
+  color:#777;
 }
 p.about_info_subtext2{
   margin-top:30px;
-  font:normal 30px "Roboto";
-  color:#888888;
+  font:normal 30px/46px "Roboto";
+  color:#777;
 }
 p.about_info_subtext2 span{
   font-weight:500;
@@ -198,7 +204,9 @@ p.about_info_subtext2 span{
 
 div#about_sub_visual{
   width:100%;
-  height:auto;
+  height:480px;
+  background:url(/sub/about/images/about_sub_visual.jpg) no-repeat center center;
+  /* background-attachment: fixed; */
   overflow:hidden;
   margin-top:170px;
 }
@@ -228,9 +236,9 @@ p.about_team_name{
   color:#0a013d;
 }
 p.about_team_text{
-  margin-top:20px;
-  font:normal 20px "Roboto";
-  color:#888888;
+  margin-top:30px;
+  font:normal 20px/30px "Roboto";
+  color:#777;
 }
 
 

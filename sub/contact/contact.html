@@ -22,7 +22,15 @@
   <script src="/js/common.js"></script>
 </head>
 <body>
+
+  
   <!--contact 페이지 시작-->
+
+  <div id="top_btn">
+    <p><img src="/image/main_topbtn_arrow.svg" alt=""></p>
+    <p>TOP</p>
+    
+  </div>
       <!-- 헤더부분 시작 -->
 
 
@@ -47,35 +55,17 @@
     </a>
   </div>
 
-  <button id="header_main_menu">
-    <span class="header_short_line"></span>
-    <span class="header_long_line"></span>
-  </button>
+ 
+  <ul id="sub_gnb">
+    <li><a href="/index.html">HOME</a></li>
+    <li><a href="/sub/about/about.html">ABOUT</a></li>
+    <li><a href="/sub/story/story.html">STORY</a></li>
+    <li><a href="/sub/contact/contact.html">CONTACT</a></li>
+    <li><a href="/sub/portfolio/portfolio.html">PORTFOLIO</a></li>
+  </ul>
 <!-- 헤더부분 끝 -->
 
-<!-- 메뉴부분 -->
-<div id="mainmenu_wrap" >
-<div id="mainmenu_list_box" class="blur">
-  
-</div>
-<ul id="mainmenu_list">
-  <li>
-    <a href="/index.html">
-      <svg width="88" height="72" viewBox="0 0 88 72" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M4 45L44 5L84 45" stroke="#C37C3B" stroke-width="7" stroke-linecap="round"/>
-        <path d="M18.2104 31.8423V68.1581H67.6841V31.8423" stroke="#C37C3B" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
-        </svg>
-        
-    </a>
-  </li>
-  <li><a href="/sub/story/story.html">STORY</a></li>
-  <li><a href="/sub/about/about.html">ABOUT</a></li>
-  <li><a href="/sub/contact/contact.html">CONTACT</a></li>
-  <li><a href="/sub/portfolio/portfolio.html">PORTFOLIO</a></li>
-</ul>
-</div>
-<!-- 메뉴부분 -->
-    
+
     <div id="contact_wrap1">
       <div id="contact_text_wrap1">
         <p id="contact_title">Contact<span id="title_deco"></span></p>
@@ -100,7 +90,7 @@
         new daum.roughmap.Lander({
           "timestamp" : "1687854314884",
           "key" : "2fc2k",
-          "mapWidth" : "1500",
+          "mapWidth" : "1600",
           "mapHeight" : "650"
         }).render();
       </script>
@@ -124,7 +114,8 @@
        
         <div id="contact_form_QnA_wrap">
           <p id=contact_form_QnA_title>문의내용</p>
-          <input id="contact_form_QnA" type="text" maxlength = "200">
+          <!-- <input id="" type="text" maxlength = "200"> -->
+          <textarea name="contact_textarea" id="contact_form_QnA" cols="30" rows="10"></textarea>
         </div>
       </div>
       
@@ -145,7 +136,7 @@
     <!-- footer start -->
     <div id="footer_info">
       <div id="sub_footer_logo">
-        <img src="/image/sub_footer_logo.png" alt="서브로고이미지">
+        <a href="/index.html"><img src="/image/sub_footer_logo.png" alt="서브로고이미지"></a>
       </div>
       <div id="sub_footer_list_box">
         <ul id="sub_footer_list">

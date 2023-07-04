@@ -1,83 +1,33 @@
 document.addEventListener('DOMContentLoaded',()=>{
 
-  // # 메뉴 버튼 이벤트 주기
-  const MenuBtn = document.querySelector('#header_main_menu')  // 메뉴 버튼 찾기
-  const firstSpan = MenuBtn.children[0] // 첫번쨰 span 태그
-  const secondSpan = MenuBtn.children[1] // 두번쨰 span 태그
-
-  const mainMenuWrap = document.querySelector('#mainmenu_wrap')
-  const mainMenuInner=document.querySelector("#mainmenu_list_box");
-
-  const mainMenu=document.querySelectorAll("#mainmenu_list>li");
-
   
+  const subPageGnb=document.querySelectorAll("#sub_gnb>li")
 
-  let buttonClickState = false;
-  let isMenuAni=false;
-  let checkIndex=0;
+  let pathName=window.location.pathname;
 
-  // gsap.set(mainMenu,{right:-mainMenuWidth,opacity:0,scale:(0,0)})
+  let aboutFile=pathName.indexOf('about');
+  let storyFile=pathName.indexOf('story');
+  let contactFile=pathName.indexOf('contact');
+  let portfolioFile=pathName.indexOf('portfolio'); 
 
-  // MenuBtn.addEventListener('mouseenter', enterWidth) 
-  // MenuBtn.addEventListener('mouseleave', leaveWidth)
-  MenuBtn.addEventListener('click',activateMainMenu)
+  const topBtn=document.querySelector("#top_btn");
 
-  // function enterWidth(){
-  //   gsap.to(firstSpan,{width:33,duration:0.3, ease:'power1.out'})
-  //   gsap.to(secondSpan,{width:100+"%",duration:0.3, ease:'power1.out'})
-  // }
+  topBtn.addEventListener("click",()=>{
+    scrollTo({top:0,behavior:'smooth'})
+  })
 
-  // function leaveWidth(){
-  //   gsap.to(firstSpan,{width:100+"%",duration:0.3, ease:'power1.out'})
-  //   gsap.to(secondSpan,{width:33,duration:0.3, ease:'power1.out'})
-  // }
-
-  // 메뉴 클릭했을경우 실행되는 함수
-  function activateMainMenu(){
-    if(buttonClickState==false){
-      if(isMenuAni==false){
-        isMenuAni=true;
-        console.log('1')
-        firstSpan.classList.add('selected')
-        secondSpan.classList.add('selected')
-        gsap.set(mainMenuWrap,{display:'block'})
-        gsap.to(mainMenuInner,{scale:(8),opacity:1,duration:1,onComplete:()=>{
-          
-          gsap.set('body,html',{overflow:'hidden'})
-          for(i=0;i<mainMenu.length;i++){
-            gsap.to(mainMenu[i],{left:0,opacity:1,delay:0.2*i,onComplete:()=>{
-              checkIndex++;
-              if(checkIndex==mainMenu.length){
-                isMenuAni=false;
-                buttonClickState=true;
-              }
-            }})
-          }
-        }})
-      }
-      
-    }else if(buttonClickState==true){
-     if(isMenuAni==false){
-      isMenuAni=true;
-      console.log('2')
-      firstSpan.classList.remove('selected')
-      secondSpan.classList.remove('selected')
-      // gsap.to(firstSpan,{width:100+"%",duration:0.3, ease:'power1.out'})
-      // gsap.to(secondSpan,{width:33,bottom:0,duration:0.3, ease:'power1.out'})
-      gsap.set(mainMenu,{opacity:0,left:-50})
-      
-      gsap.to(mainMenuInner,{scale:(1),opacity:0,duration:1,onComplete:()=>{
-        gsap.set(mainMenuWrap,{display:'none'})
-        gsap.set('body,html',{overflow:'visible'})
-        isMenuAni=false;
-        buttonClickState=false
-        checkIndex=0
-      }})
-     }
-    }
+  if(aboutFile!=-1){
+    subPageGnb[1].classList.add('selected')
   }
-
-
+  if(storyFile!=-1){
+    subPageGnb[2].classList.add('selected')
+  }
+  if(contactFile!=-1){
+    subPageGnb[3].classList.add('selected')
+  }
+  if(portfolioFile!=-1){
+    subPageGnb[4].classList.add('selected')
+  }
 
 
   const checkMenuBtn = document.querySelector('#footer_check_btn')
@@ -101,6 +51,9 @@ document.addEventListener('DOMContentLoaded',()=>{
     }
     
   }
+
+
+  
 
 
 })
