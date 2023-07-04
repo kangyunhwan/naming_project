@@ -20,7 +20,7 @@ window.addEventListener('load',()=>{
 
 
   topBtn.addEventListener("click",()=>{
-    scrollTo(0,0)
+    scrollTo({top:0,behavior:'smooth'})
   })
 
   

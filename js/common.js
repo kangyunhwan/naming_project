@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded',()=>{
   const topBtn=document.querySelector("#top_btn");
 
   topBtn.addEventListener("click",()=>{
-    scrollTo(0,0)
+    scrollTo({top:0,behavior:'smooth'})
   })
 
   if(aboutFile!=-1){
