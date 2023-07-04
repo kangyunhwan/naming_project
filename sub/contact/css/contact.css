@@ -31,7 +31,7 @@ p#contact_title::before{
   position:absolute;
   left:150px;
   top:70px;
-  background: url(/sub/contact/images/title_deco.png)no-repeat;
+  background: url(/naming_project/sub/contact/images/title_deco.png)no-repeat;
 }
 p#contact_num_text{
   font:normal 90px "Roboto";
@@ -49,7 +49,7 @@ p#contact_num_text::before{
   position: absolute;
   right:580px;
   top:-15px;
-  background: url(/sub/contact/images/num_deco.png) no-repeat;
+  background: url(/naming_project/sub/contact/images/num_deco.png) no-repeat;
 }
 p#contact_address_title{
   font:normal 50px "Roboto";

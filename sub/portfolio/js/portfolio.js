@@ -135,7 +135,7 @@ document.addEventListener('DOMContentLoaded',()=>{
     
   
     function showPortfolio(num){
-      axios.get('/sub/portfolio/portfolio_data'+num+'.html').then((response)=>{
+      axios.get('/naming_project/sub/portfolio/portfolio_data'+num+'.html').then((response)=>{
         portfolioListWrap.innerHTML=response.data
       })
     }
