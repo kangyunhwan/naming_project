@@ -22,13 +22,14 @@ p#contact_title{
   left:0px;
   top:0px;
   margin-bottom: 150px;
+  text-align:left;
 }
 p#contact_title::before{
   content: '';
   width: 28px;
   height: 46px;
   position:absolute;
-  right:340px;
+  left:150px;
   top:70px;
   background: url(/sub/contact/images/title_deco.png)no-repeat;
 }
@@ -170,21 +171,24 @@ p#contact_form_QnA_title{
   height: 25px;
   color: #0a013d;
 }
-input#contact_form_QnA{
+textarea#contact_form_QnA{
   width: 1250px;
   height:300px;
   margin-left:0px;
   background: none;
+  overflow: hidden;
+  resize: none;
   border:none;
   caret-color: #0a013d;
-  font-size: 25px;
+  font: normal 25px "Roboto";
+  padding: 20px 0px;
   border: none;
   box-sizing: border-box;
   position:absolute;
-  left:150px;
+  left:127px;
   top:0px;
 }
-input#contact_form_QnA:focus{
+textarea#contact_form_QnA:focus{
   outline: none;
 }
 

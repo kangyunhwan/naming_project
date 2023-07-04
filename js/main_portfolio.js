@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded",()=>{
   const portfolioWrap=document.querySelector("#portfolio_wrap");
   const portfolioList=document.querySelector("#portfolio_list");
 
-  
+  gsap.set(portfolioWrap,{height:window.innerHeight})
 
   let endY=portfolioList.offsetHeight-window.innerHeight+500;
 
