@@ -13,6 +13,16 @@ document.addEventListener("DOMContentLoaded",()=>{
     let count=parseInt(Math.random()*customerTag.length)
     randomIndex.push(count)
 
+
+
+    // randomIndex.filter((item)=>{
+    //   if(item!=count){
+    //     return item
+    //   }
+    // })
+
+
+
     while(randomIndex.length!=customerTag.length){
       
       count=parseInt(Math.random()*customerTag.length)
@@ -20,6 +30,9 @@ document.addEventListener("DOMContentLoaded",()=>{
       if(randomIndex[0]!=count && randomIndex[1]!=count && randomIndex[2]!=count && randomIndex[3]!=count && randomIndex[4]!=count && randomIndex[5]!=count && randomIndex[6]!=count && randomIndex[7]!=count && randomIndex[8]!=count){
         randomIndex.push(count)
       }
+
+
+    
     }
     // console.log(randomIndex)
   }
