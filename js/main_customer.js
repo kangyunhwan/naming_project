@@ -39,15 +39,12 @@ document.addEventListener("DOMContentLoaded",()=>{
         randomIndex.push(count)
       }
 
-<<<<<<< HEAD
       // if(randomIndex[0]!=count && randomIndex[1]!=count && randomIndex[2]!=count && randomIndex[3]!=count && randomIndex[4]!=count && randomIndex[5]!=count && randomIndex[6]!=count && randomIndex[7]!=count && randomIndex[8]!=count){
       //   randomIndex.push(count)
       // }
 
-=======
 
     
->>>>>>> 035bd0f572547cf663192cb82eb1388488592f04
     }
     console.log(randomIndex)
   }
