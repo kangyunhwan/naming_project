@@ -6,6 +6,8 @@ document.addEventListener("DOMContentLoaded",()=>{
   let randomIndex=[];
   let index=0;
 
+  
+
   randomCount();
   
   function randomCount(){
@@ -14,14 +16,25 @@ document.addEventListener("DOMContentLoaded",()=>{
     randomIndex.push(count)
 
     while(randomIndex.length!=customerTag.length){
-      
+      let isDiff=0
       count=parseInt(Math.random()*customerTag.length)
 
-      if(randomIndex[0]!=count && randomIndex[1]!=count && randomIndex[2]!=count && randomIndex[3]!=count && randomIndex[4]!=count && randomIndex[5]!=count && randomIndex[6]!=count && randomIndex[7]!=count && randomIndex[8]!=count){
+      randomIndex.map((item)=>{
+        if(item==count){
+          isDiff++
+        }
+      })
+
+      if(isDiff==0){
         randomIndex.push(count)
       }
+
+      // if(randomIndex[0]!=count && randomIndex[1]!=count && randomIndex[2]!=count && randomIndex[3]!=count && randomIndex[4]!=count && randomIndex[5]!=count && randomIndex[6]!=count && randomIndex[7]!=count && randomIndex[8]!=count){
+      //   randomIndex.push(count)
+      // }
+
     }
-    // console.log(randomIndex)
+    console.log(randomIndex)
   }
   
   for(i=0;i<customerTag.length;i++){
