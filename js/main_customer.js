@@ -15,16 +15,6 @@ document.addEventListener("DOMContentLoaded",()=>{
     let count=parseInt(Math.random()*customerTag.length)
     randomIndex.push(count)
 
-
-
-    // randomIndex.filter((item)=>{
-    //   if(item!=count){
-    //     return item
-    //   }
-    // })
-
-
-
     while(randomIndex.length!=customerTag.length){
       let isDiff=0
       count=parseInt(Math.random()*customerTag.length)
