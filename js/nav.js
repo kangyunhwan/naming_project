@@ -22,24 +22,32 @@ MenuBtn.addEventListener('click',activateMainMenu)
 function activateMainMenu(e){
   e.preventDefault()
   if(buttonClickState==false){
+
     if(isMenuAni==false){
       isMenuAni=true;
       console.log('1')
+      console.log(buttonClickState)
       firstSpan.classList.add('selected')
       secondSpan.classList.add('selected')
       gsap.set(mainMenuWrap,{display:'block'})
-      setTimeout(subMenuAni,250)
-      gsap.to(mainMenuInner,{scale:(8),opacity:1,duration:0.7,onComplete:()=>{
-        
-        gsap.set('body,html',{overflow:'hidden'})
-        
-      }})
-
-     
+      // setTimeout(subMenuAni,250)
+      for(i=0;i<mainMenu.length;i++){
+        gsap.to(mainMenu[i],{left:0,opacity:1,delay:0.1*i,onComplete:()=>{
+          checkIndex++;
+          if(checkIndex==mainMenu.length){
+            isMenuAni=false;
+            buttonClickState=true;
+          }
+        }})
+      }
+      gsap.set('body,html',{overflow:'hidden'})
+      gsap.to(mainMenuInner,{scale:(8),opacity:1,duration:0.7})
     }
-    
-  }else if(buttonClickState==true){
+  }
+
+  if(buttonClickState==true){
    if(isMenuAni==false){
+    
     isMenuAni=true;
     console.log('2')
     firstSpan.classList.remove('selected')
