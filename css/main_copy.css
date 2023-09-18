@@ -39,8 +39,8 @@ div#copy_wrap div.copy_title path{
   fill:none;
   stroke:#22226b;
   stroke-width:4px;
-  /* stroke-dasharray:1200;
-  stroke-dashoffset:1200; */
+  stroke-dasharray:1200;
+  stroke-dashoffset:1200;
 }
 div#copy_wrap div.activate path{
   animation: stroke 1s 1s linear;
@@ -60,11 +60,11 @@ div#copy_wrap p.copy_arrow{
   top:52%;
   z-index:99;
 }
-/* div#copy_wrap p.copy_arrow path{
+div#copy_wrap p.copy_arrow path{
   stroke-dasharray:600;
   stroke-dashoffset:600;
   
-} */
+}
 div#copy_wrap p.arrow_activate path{
   animation:copy_arrow_ani 1s 1.2s forwards;
 }
